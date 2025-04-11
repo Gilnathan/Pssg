@@ -12,7 +12,7 @@ const Button = () => {
   return (
     <div className={styles.wrapper}>
       <a
-        href="/"
+        href="https://www.sympla.com.br/evento/pssg-porto-seguro-summer-geek/2681310?referrer=www.google.com"
         target="_blank"
         rel="noopener noreferrer"
         onClick={handleClick}
