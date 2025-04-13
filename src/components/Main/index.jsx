@@ -14,6 +14,8 @@ export default function Main() {
         playsInline
       />
 
+      <div className={styles.contentLimitado} > 
+
       <div className={styles.containerInf}>
         <h1>
           <span className={styles.titleOrange}>Porto Seguro</span> <br />
@@ -38,8 +40,15 @@ export default function Main() {
 
         <Button />
       </div>
-
+      <div className={styles.containerContador}> 
+      
       <Countdown />
+      
+      </div>
+      
+      </div>
+
+      
     </div>
   );
 }
