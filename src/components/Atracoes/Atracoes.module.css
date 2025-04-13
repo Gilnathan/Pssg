@@ -1,11 +1,16 @@
 .containeratracoes{
     min-height: 70vh;
     width: 100vw;
-    background: linear-gradient(135deg, #00485b, #001f2b, #000000);
+    
     display: flex;
     align-items: center;
     justify-content: space-around;   
     flex-direction: column;
+
+    background-image: url('/BG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .containerCards{
     width: 80%;

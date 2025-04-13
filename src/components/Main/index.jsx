@@ -1,6 +1,8 @@
 import styles from "./Main.module.css";
 import Countdown from "@/components/Countdown/Countdown";
 import Button from "../Button/Button";
+import Carousel from "../Carousel/Carousel";
+
 
 export default function Main() {
   return (
