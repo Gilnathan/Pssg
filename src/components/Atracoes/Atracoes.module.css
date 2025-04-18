@@ -7,10 +7,7 @@
     justify-content: space-around;   
     flex-direction: column;
 
-    background-image: url('/BG.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #00485b;
 }
 .containerCards{
     width: 80%;
