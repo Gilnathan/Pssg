@@ -1,8 +1,10 @@
+"use client";
 
 import styles from "./Evento.module.css"
 import Carrocel from "../Carrocel/Carrocel"
 import Image from 'next/image';
 import Button from "../ButtonCosplay/Button";
+import VideoCosplayBackground from "../VIdeoCosplay/VideoCosplay";
 
 import cosplayrPrincipal from '/public/cosplayrPrincipal.png';
 import img1 from '/public/foto1.png';
@@ -23,7 +25,7 @@ export default function Evento(){
             <Carrocel />
             <div className={styles.container} >
 
-            <Image className={styles.imagemPrincipal} src={cosplayrPrincipal} alt="Imagem Principal" width={500} height={500} priority/>
+                <VideoCosplayBackground />
 
                  <div className={styles.containerTexto}>
 
