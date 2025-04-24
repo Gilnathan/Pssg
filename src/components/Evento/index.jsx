@@ -20,12 +20,10 @@ export default function Evento(){
         
         <div className={styles.containerEvento} >
              
-            <div className={styles.containerLimitado} >
-            
-            <Carrocel />
+            <div className={styles.containerLimitado} >         
             <div className={styles.container} >
 
-                <VideoCosplayBackground />
+                    <VideoCosplayBackground />
 
                  <div className={styles.containerTexto}>
 

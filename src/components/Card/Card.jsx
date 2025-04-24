@@ -1,6 +1,7 @@
 import styles from './Card.module.css'
 import Image from 'next/image'
 import { Clock } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Card({ titulo, descricao, horario, imagem }) {
   return (
@@ -26,7 +27,7 @@ export default function Card({ titulo, descricao, horario, imagem }) {
               {horario}
             </div>
           )}
-          <button className={styles.button}>Saiba mais</button>
+          <Link href="/Page_cosplay" > <button className={styles.button}>Saiba mais</button> </Link>
         </div>
       </div>
     </div>

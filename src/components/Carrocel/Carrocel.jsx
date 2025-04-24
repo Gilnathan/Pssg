@@ -30,8 +30,8 @@ export default function Carrocel() {
         className={styles.mySwiper}
       >
         <div className={styles.containerTitulo}>
-          <Image src={logo} alt='logo' className={styles.imgLogo} />
-          <h1>Concurso Cosplay & Cospobre</h1>
+          
+          <h1> Edição 2024</h1>
         </div>
 
         <SwiperSlide> <Image src={img1} alt='img1' className={styles.imgCarrocel} /> </SwiperSlide>
