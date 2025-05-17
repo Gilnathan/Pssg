@@ -4,7 +4,7 @@ import styles from "./Evento.module.css"
 import Carrocel from "../Carrocel/Carrocel"
 import Image from 'next/image';
 import Button from "../ButtonCosplay/Button";
-import VideoCosplayBackground from "../VIdeoCosplay/VideoCosplay";
+import VideoNaMoldura from "../VideoNaMoldura/VideoNaMoldura";
 
 import cosplayrPrincipal from '/public/cosplayrPrincipal.png';
 import img1 from '/public/foto1.png';
@@ -23,7 +23,7 @@ export default function Evento(){
             <div className={styles.containerLimitado} >         
             <div className={styles.container} >
 
-                    <VideoCosplayBackground />
+            <VideoNaMoldura videoPath="VideoCosplay.mp4" /> 
 
                  <div className={styles.containerTexto}>
 

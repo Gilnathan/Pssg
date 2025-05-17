@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Clock } from 'lucide-react'
 import Link from 'next/link'
 
-export default function Card({ titulo, descricao, horario, imagem }) {
+export default function Card({ titulo, descricao, horario, imagem, linkPage }) {
   return (
     <div className={styles.card}>
       {imagem && (
@@ -27,7 +27,7 @@ export default function Card({ titulo, descricao, horario, imagem }) {
               {horario}
             </div>
           )}
-          <Link href="/Page_cosplay" > <button className={styles.button}>Saiba mais</button> </Link>
+          <Link href={linkPage} > <button className={styles.button}>Saiba mais</button> </Link>
         </div>
       </div>
     </div>

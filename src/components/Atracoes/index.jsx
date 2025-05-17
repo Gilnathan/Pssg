@@ -34,25 +34,29 @@ export default function Atracoes() {
             <Card
               titulo="Campeonato de K-Pop (Dance Cover)"
               descricao="Solte o talento no palco com performances incríveis de K-Pop! Participe sozinho ou com seu grupo e concorra a prêmios mostrando sua paixão pela dança coreana."
-              imagem={kpop} 
+              imagem={kpop}
+              linkPage="/Page_K-Pop"
             />
 
             <Card
               titulo="Concurso Cosplay & Cospobre"
               descricao="Seja com armadura digna de cinema ou papelão e muita criatividade — o importante é se divertir! Mostre sua caracterização, desfile no palco e concorra a prêmios em duas categorias: Cosplay e Cospobre!"
-              imagem={cosplayrs} 
+              imagem={cosplayrs}
+              linkPage="/Page_cosplay"
             />
 
             <Card
               titulo="Área Gamer"
               descricao="Diversão garantida para todos os estilos de jogador! Entre na vibe com partidas de MTK, mostre seus passos no Just Dance e dispute nos gramados virtuais do FIFA. É só chegar e jogar!"
-              imagem={areagamer} 
+              imagem={areagamer}
+              linkPage="/evento-cosplay"
             />
 
             <Card
               titulo="Quiz Otaku & Gincanas"
               descricao="Você é um otaku raiz? Prove seus conhecimentos em nossos quizzes interativos e encare gincanas cheias de desafios. Diversão garantida para todas as idades!."
-              imagem={gincana} 
+              imagem={gincana}
+              linkPage="/evento-cosplay" 
             />
 
       </div>
