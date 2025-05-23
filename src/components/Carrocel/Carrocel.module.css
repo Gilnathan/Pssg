@@ -1,92 +1,121 @@
+/* Carrocel.module.css */
 
 .swiper {
-    width: 100%;
-    height: 100%;
-    
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgCarrocel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra o slide sem distorção */
+}
+
+.mySwiper {
+  object-fit: cover;
+  overflow: hidden;
+  height: 450px; /* Altura padrão para telas maiores */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.containerTitulo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  color: #ffd080;
+  z-index: 100;
+  bottom: 5%;
+  left: 10%;
+  padding: 10px;
+  background-color: #00485b;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+  font-size: 0.8rem; /* Tamanho da fonte padrão (para telas maiores) */
+  /* Adicionar max-width para evitar que o título fique muito largo em telas pequenas */
+  max-width: 80%; /* Ajuste para não quebrar a linha de forma estranha */
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
+}
+
+.imgLogo {
+  height: 30px;
+  width: auto;
+}
+
+/* Media Queries para Responsividade */
+
+/* Telas médias (e.g., tablets em modo paisagem, laptops menores) */
+@media (max-width: 1225px) {
+  .mySwiper {
+    height: 300px; /* Ajuste a altura para telas médias */
   }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  .containerTitulo {
+    font-size: 0.7rem; /* Reduz o tamanho da fonte do título */
+    padding: 8px; /* Reduz o padding */
+    bottom: 3%; /* Ajusta a posição para telas menores */
+    left: 5%; /* Ajusta a posição para telas menores */
   }
-  
-  .imgCarrocel{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .imgLogo {
+    height: 25px; /* Reduz o tamanho do logo */
   }
+}
 
-
-  .mySwiper{
-    object-fit: cover;
-    overflow: hidden;
-    height: 450px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: relative;
+/* Telas pequenas (e.g., tablets em modo retrato, smartphones maiores) */
+@media (max-width: 768px) {
+  .mySwiper {
+    height: 220px; /* Ajuste a altura para telas pequenas */
   }
-  
-
-  .containerTitulo{
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    position: absolute;
-    color: #ffd080;
-    z-index: 100;
-
-    bottom: 5%;
-    left: 10%;
-
-    padding: 10px;
-    background-color: #00485b;
-
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 16px;
-    padding: 10px;
-    text-align: center;
-    font-family: "Russo One", sans-serif;
-    font-size: 0.8rem;
-    
+  .containerTitulo {
+    font-size: 0.6rem; /* Reduz ainda mais o tamanho da fonte */
+    padding: 6px; /* Reduz o padding */
+    bottom: 2%; /* Ajusta a posição */
+    left: 2%; /* Ajusta a posição */
+    gap: 5px; /* Reduz o espaçamento entre elementos */
   }
-  .imgLogo{
-    height: 30px;
-    width: auto;
+  .imgLogo {
+    height: 20px; /* Reduz o tamanho do logo */
   }
+}
 
-
-
-
-  @media ( width <= 1225px) {
-    .mySwiper{
-      height: 200px;
-    }
-    
+/* Telas muito pequenas (e.g., smartphones) */
+@media (max-width: 480px) {
+  .mySwiper {
+    height: 180px; /* Ajuste final para telas muito pequenas */
   }
-
-  @media ( width <= 600px) {
-    .mySwiper{
-      height: 150px;
-    }
-    
+  .containerTitulo {
+    font-size: 0.5rem; /* Fonte ainda menor */
+    padding: 4px; /* Padding mínimo */
+    bottom: 1%;
+    left: 1%; /* Posição mais próxima da borda */
+    border-radius: 10px; /* Bordas mais arredondadas */
+    max-width: 90%; /* Pode expandir um pouco mais, mas ainda com margem */
+    /* Talvez centralizar o título para telas muito pequenas */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
   }
-
-  @media ( width <=  375px) {
-    .mySwiper{
-      height: 100px;
-    }
-    
+  .imgLogo {
+    height: 15px; /* Logo ainda menor */
   }
-  
+}
+
+/* Você pode remover as media queries mais específicas se 480px já atender */
+/* @media (width <= 375px) {
+  .mySwiper {
+    height: 100px;
+  }
+} */

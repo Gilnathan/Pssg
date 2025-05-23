@@ -36,6 +36,10 @@
   .titulo span {
     color: #ff7a00; /* Laranja */
   }
+
+  .Card1{
+    transform: rotate(1.1);
+  }
  
 
   

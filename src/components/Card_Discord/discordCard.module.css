@@ -1,0 +1,60 @@
+.container{
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00475b;
+}
+
+.card{
+    width: 100vw;
+    max-width: 1500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    height: 150px;
+    border-radius: 20px;
+}
+
+/* components/Card_Discord/discordCard.module.css */
+
+
+.card {
+    /* Seus estilos existentes para o card */
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    background-image: url(https://external-preview.redd.it/ymGVMOxXyh3oep0_9qp45rdHFa-81kll90NAH8pqbAg.jpg?auto=webp&s=ea5510d95deef553533b5d9913c70170def133f0);
+
+    background-size: cover;
+    background-position: center;
+
+       
+    
+}
+
+
+.lottieIcon {
+    width: 120px; 
+    height: 120px; 
+    margin-bottom: 15px; 
+}
+
+
+
+

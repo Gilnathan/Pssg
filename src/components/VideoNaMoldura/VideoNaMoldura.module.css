@@ -1,54 +1,118 @@
-.moldura {
-    background-color: #333; /* Cor da moldura do celular */
-    border-radius: 20px;
-    padding: 20px;
-    width: 350px; /* Largura menor para simular vertical */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .telaVertical {
-    background-color: black;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 100%;
-    aspect-ratio: 9 / 16; /* Proporção vertical típica */
-  }
-  
-  .videoVertical {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Preenche o contêiner mantendo a proporção */
-  }
-  
-  .altoFalanteVertical {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 4px;
-    background-color: #555;
-    border-radius: 4px;
-  }
-  
-  .botoesVerticais {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .botaoVertical {
-    width: 15px;
-    height: 15px;
-    background-color: #555;
-    border-radius: 50%;
-  }
+/* components/VideoNaMoldura/VideoNaMoldura.module.css */
+
+.iphoneMoldura {
+  /* Variáveis CSS para facilitar a personalização */
+  --iphone-base-width: 300px; /* Reduzimos a largura base para torná-lo menor */
+  --iphone-aspect-ratio: 0.48; /* Proporção (largura / altura) de um iPhone - mantemos */
+  --iphone-height: calc(var(--iphone-base-width) / var(--iphone-aspect-ratio));
+
+  --border-radius: 30px; /* Reduzimos um pouco o arredondamento também */
+  --screen-inset: 10px; /* Espaço da borda da tela para a moldura - reduzimos */
+  --button-thickness: 3px; /* Espessura dos botões laterais - reduzimos */
+  --button-color: #555555; /* Cor cinza escuro para os botões */
+
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: var(--border-radius);
+  width: var(--iphone-base-width);
+  height: var(--iphone-height);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6),
+              inset 0px 0px 10px rgba(255, 255, 255, 0.07);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Estilização da Tela do iPhone */
+.iphoneScreen {
+  background-color: black;
+  border-radius: calc(var(--border-radius) - var(--screen-inset) / 2);
+  width: calc(100% - (var(--screen-inset) * 2));
+  height: calc(100% - (var(--screen-inset) * 2));
+  overflow: hidden;
+  position: relative;
+}
+
+.videoPlayer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilização do Notch (Entalhe superior) */
+.notch {
+  position: absolute;
+  top: var(--screen-inset);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px; /* Largura do notch - reduzimos */
+  height: 20px; /* Altura do notch - reduzimos */
+  background-color: #000;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 8px; /* Pequeno padding para os elementos internos - ajustado */
+}
+
+.speaker {
+  width: 30px; /* Reduzido */
+  height: 4px; /* Reduzido */
+  background-color: #333;
+  border-radius: 3px;
+}
+
+.camera {
+  width: 8px; /* Reduzido */
+  height: 8px; /* Reduzido */
+  background-color: #333;
+  border-radius: 50%;
+}
+
+/* Estilização dos Botões Laterais */
+.silentSwitch,
+.volumeUpButton,
+.volumeDownButton,
+.powerButton {
+  position: absolute;
+  background-color: var(--button-color);
+  border-radius: 2px;
+  width: var(--button-thickness);
+}
+
+.silentSwitch {
+  height: 16px; /* Reduzido */
+  left: 0;
+  top: 15%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.volumeUpButton {
+  height: 30px; /* Reduzido */
+  left: 0;
+  top: 25%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.volumeDownButton {
+  height: 30px; /* Reduzido */
+  left: 0;
+  top: 35%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.powerButton {
+  height: 45px; /* Reduzido */
+  right: 0;
+  top: 30%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}

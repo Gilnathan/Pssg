@@ -1,0 +1,131 @@
+/* components/DiscordCallToAction.module.css */
+
+.discordCallToAction {
+  background-color: #1a3644; /* Fundo escuro */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: 'Arial', sans-serif;
+  color: #e0f2f7; /* Cor de texto clara */
+}
+
+.title {
+  color: #4caf50; /* Cor vibrante para o título */
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px;
+  text-align: left;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.listItem {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.button {
+  display: inline-block;
+  background-color: #4caf50; /* Cor do botão "GARANTIR INGRESSO" */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.button:hover {
+  background-color: #66bb6a;
+}
+
+/* Cores de destaque para as referências a animes */
+.highlightGreen {
+  color: #8bc34a;
+  font-weight: bold;
+}
+
+.highlightYellow {
+  color: #ffeb3b;
+  font-weight: bold;
+}
+
+.highlightBlue {
+  color: #03a9f4;
+  font-weight: bold;
+}
+
+.highlightPink {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.highlightRed {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.highlightPurple {
+  color: #9c27b0;
+  font-weight: bold;
+}
+
+.highlightGray {
+  color: #607d8b;
+  font-weight: bold;
+}
+
+.highlightOrange {
+  color: #ff9800;
+  font-weight: bold;
+}
+
+.highlightGold {
+  color: #fdd835;
+  font-weight: bold;
+}
+
+.highlightDarkRed {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+  .discordCallToAction {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  .text,
+  .listItem {
+    font-size: 1em;
+  }
+
+  .button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+  }
+}
