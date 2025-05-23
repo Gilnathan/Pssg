@@ -22,7 +22,7 @@ export default function Card_Discord() {
                 </div>
                 
                         <h2 className={styles.title}>
-                             Embarque na Aventura no Discord! 
+                             
                         </h2>
 
                         
