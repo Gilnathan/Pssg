@@ -4,7 +4,6 @@ import styles from "./page.module.css";
 
 import Main from "@/components/Main";
 import Atracoes from "@/components/Atracoes";
-import Evento from "@/components/Evento";
 import Carrocel from "@/components/Carrocel/Carrocel";
 import Card_Discord from "@/components/Card_Discord/Card_Discord";
 

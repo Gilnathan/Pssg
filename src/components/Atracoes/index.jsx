@@ -63,9 +63,15 @@ export default function Atracoes() {
 
   return (
     <div ref={containerAtracoesRef} className={styles.containeratracoes}>
+      <div className={styles.containerTitulo}>  
       <h2 ref={tituloRef} className={styles.titulo}>
-        Atrações <span>Principais</span>
+        Mostre Seu <span>Talento</span>
       </h2>
+      <h3>K-Pop, Cosplay, Games e muito mais esperam por você!</h3>
+      
+
+      </div>
+      
 
       <div ref={cardsContainerRef} className={styles.containerCards}>
         <div className={styles.Card1}>
