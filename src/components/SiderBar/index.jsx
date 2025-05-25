@@ -28,7 +28,7 @@ export default function SideBar() {
           <nav className={styles.navContainer}>
             <Link href="/"><button className={styles.bntSideBar}><Image src={home} alt="home" className={styles.icon} />Home</button></Link>
             <Link href="/"><button className={styles.bntSideBar}><Image src={datas} alt="datas" className={styles.icon} />Programação</button></Link>
-            <Link href="/"><button className={styles.bntSideBar}><Image src={evento} alt="evento" className={styles.icon} />Evento</button></Link>
+            <Link href="/SobreEvento"><button className={styles.bntSideBar}><Image src={evento} alt="evento" className={styles.icon} />Evento</button></Link>
             <Link href="/"><button className={styles.bntSideBar}><Image src={contato} alt="contato" className={styles.icon} />Contato</button></Link>
           </nav>
 

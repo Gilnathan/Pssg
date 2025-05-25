@@ -1,0 +1,94 @@
+/* ================================================================= */
+/* Estilos Globais (Mobile-First) - Aplicados por padrão em telas pequenas */
+/* ================================================================= */
+
+.container {
+  padding-top: 100px; /* Reduzi o padding top para telas menores */
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  background: linear-gradient(to bottom, #D2691E 0%, #008080 100%);
+  overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+}
+
+/* Removido .containerEvento daqui, pois ele não é usado no seu JSX atual para essa seção */
+
+.containerLimitado {
+  
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  flex-direction: column; /* Em mobile, os itens se empilham verticalmente */
+  align-items: center; /* Centraliza os itens quando empilhados */
+  justify-content: center; /* Centraliza verticalmente o conteúdo quando empilhado */
+  padding: 20px; /* Padding geral para telas menores */
+  gap: 40px; /* Espaço entre o vídeo e o texto */
+  text-align: center; /* Centraliza o texto por padrão em mobile */
+}
+
+.containerTexto {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo do texto em mobile */
+  padding: 20px; /* Ajuste o padding se necessário */
+  gap: 20px;
+  text-align: center; /* Garante que o texto esteja centralizado */
+}
+
+.tituloEvento {
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem; /* Tamanho de fonte menor para mobile */
+  line-height: 1.2; /* Melhora a legibilidade */
+}
+
+.textoEvento {
+  color: white;
+  font-size: 1.1em; /* Tamanho de fonte ajustado para mobile */
+  line-height: 1.5; /* Melhora a legibilidade */
+}
+
+/* ================================================================= */
+/* Media Queries - Estilos para Telas Maiores */
+/* ================================================================= */
+
+/* Para tablets e telas maiores (ex: 768px e acima) */
+@media (min-width: 768px) {
+  .container {
+    padding-top: 100px; /* Volta o padding top para desktop */
+  }
+
+  .containerLimitado {
+    flex-direction: row; /* Em telas maiores, os itens ficam lado a lado */
+    justify-content: space-around; /* Distribui o espaço entre eles */
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 30px; /* Espaço entre os itens */
+  }
+
+  .containerTexto {
+    align-items: flex-start; /* Alinha o texto à esquerda em desktop */
+    text-align: start; /* Alinha o texto à esquerda em desktop */
+    padding: 40px; /* Mantém o padding original para desktop */
+  }
+
+  .tituloEvento {
+    font-size: 3.0rem; /* Volta o tamanho de fonte original para desktop */
+  }
+
+  .textoEvento {
+    font-size: 1.3em; /* Volta o tamanho de fonte original para desktop */
+  }
+}
+
+/* Para telas muito grandes (ex: 1200px e acima) */
+@media (min-width: 1200px) {
+  .containerLimitado {
+    justify-content: center; /* Pode centralizar mais se preferir em telas ultra-largas */
+    gap: 60px; /* Aumenta o gap em telas muito grandes */
+  }
+}

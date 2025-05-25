@@ -32,7 +32,7 @@ export default function Card_Discord() {
 
                     <ButtonGlobal
                         buttonText="ENTRAR"
-                        href="https://www.sympla.com.br/evento/pssg-porto-seguro-summer-geek/2681310?referrer=www.google.com"
+                        href="https://discord.com/"
                     />
                 </div>
             </div>

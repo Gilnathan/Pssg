@@ -1,0 +1,152 @@
+/* components/PhotoAlbum.module.css */
+
+.photoAlbumSection {
+  padding: 40px 20px;
+  background-color: #f0f2f5; /* Um cinza claro para o fundo da seção */
+  text-align: center;
+}
+
+.albumTitle {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.photoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* 300px + padding */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.photoItem {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  position: relative; /* Necessário para layout="responsive" */
+  padding-top: 66.66%; /* 2/3 de altura para 3/2 de proporção (200/300) */
+}
+
+.photoItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Modal de Expansão */
+.expandedOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* Fundo semi-transparente escuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Garante que o modal esteja acima de todo o conteúdo */
+  backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+}
+
+.expandedContent {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.expandedImage {
+  position: relative;
+  width: 100%; /* Largura total do contêiner */
+  height: calc(100% - 40px); /* Altura menos espaço para a legenda */
+  max-height: 80vh; /* Limita a altura para que não saia da tela */
+  max-width: 80vw; /* Limita a largura */
+}
+
+.closeButton {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 2em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease;
+  z-index: 1001; /* Acima da imagem expandida */
+}
+
+.closeButton:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.expandedCaption {
+  color: #333;
+  font-size: 1.1em;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .photoAlbumSection {
+    padding: 20px 10px;
+  }
+
+  .albumTitle {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .photoGrid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .closeButton {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5em;
+  }
+
+  .expandedContent {
+    max-width: 95%;
+    max-height: 95%;
+  }
+
+  .expandedCaption {
+    font-size: 1em;
+    padding: 8px 15px;
+  }
+}
