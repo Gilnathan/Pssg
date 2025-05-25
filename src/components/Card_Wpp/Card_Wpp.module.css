@@ -12,10 +12,7 @@
   overflow-x: hidden; /* Garante que não haverá rolagem horizontal */
 }
 
-/* Removido: .cardLink e seus estilos de hover/active */
-/* Se você quiser um efeito de clique visual no .card sem que ele seja um link,
-   poderíamos adicionar estilos de :active diretamente ao .card, mas por enquanto,
-   estou removendo a transição de clique.*/
+
 
 .card {
   width: 100%; /* Garante que o .card preencha o .container */
@@ -33,7 +30,7 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
-  background-image: url(https://external-preview.redd.it/ymGVMOxXyh3oep0_9qp45rdHFa-81kll90NAH8pqbAg.jpg?auto=webp&s=ea5510d95deef553533b5d9913c70170def133f0);
+  background-image: url(https://a-static.besthdwallpaper.com/anime-art-night-sky-scenery-wallpaper-2560x960-90501_87.jpg);
   background-size: cover;
   background-position: center;
 

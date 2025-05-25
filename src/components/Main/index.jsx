@@ -46,7 +46,7 @@ export default function Main() {
           </motion.h1>
 
           <motion.p className={styles.subtitle} variants={itemVariants}>
-            "Um encontro de almas que compartilham a paixão pela fantasia"
+            "Um encontro de almas que compartilham <br /> a paixão pela fantasia"
           </motion.p>
 
           <motion.div className={styles.infoContainer} variants={itemVariants}>

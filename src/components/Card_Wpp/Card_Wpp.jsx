@@ -2,14 +2,14 @@
 'use client';
 
 import Lottie from 'lottie-react';
-import styles from './discordCard.module.css';
+import styles from './Card_Wpp.module.css';
 import ButtonGlobal from '../ButtonGlobal/ButtonGlobal';
 
 // Se seu componente está em src/components/Card_Discord/Card_Discord.jsx
 // e o JSON está em public/Discord_icon.json
-import DiscordIconAnimation from '../../../public/Discord_icon.json'; 
+import Whatsappicon from '../../../public/Whatsapp_icon.json'; 
 
-export default function Card_Discord() {
+export default function Card_Wpp() {
     return(
         <div className={styles.container}>
             {/* O card não é mais um link */}
@@ -17,7 +17,7 @@ export default function Card_Discord() {
                 <div className={styles.containerInfomaçoes}>
                     <div className={styles.lottieIcon}> 
                         <Lottie
-                            animationData={DiscordIconAnimation}
+                            animationData={Whatsappicon}
                             loop={true}
                             autoplay={true}
                             style={{ width: '100%', height: '100%' }} 
@@ -25,9 +25,9 @@ export default function Card_Discord() {
                     </div>
                     <div className={styles.containerTitulo}> 
                         <h2 className={styles.titulo}>
-                            Entre no Nosso <span>Discord!</span>
+                            Nosso Grupo no  <span>WhatsApp!</span>
                         </h2>
-                        <h3>Bate-papos, debates, jogos e tudo sobre animes e nosso evento num só lugar.</h3>
+                        <h3>Entre agora para receber comunicados instantâneos e ficar por dentro de tudo que acontece no evento.</h3>
                     </div>
 
                     <ButtonGlobal

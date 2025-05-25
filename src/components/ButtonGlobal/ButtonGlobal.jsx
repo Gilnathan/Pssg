@@ -1,20 +1,22 @@
+// components/ButtonGlobal/ButtonGlobal.jsx
 'use client'
 
-import React from 'react'
-import styles from './Button.module.css'
-import Image from 'next/image'
-import Coinvideogame from '/public/Coinvideogame.png';
+import React from 'react';
+import styles from './ButtonGlobal.module.css'; // Mudei para um novo arquivo de CSS modular
+                                                  // para evitar conflitos com o Button.jsx original.
+                                                  // Você pode renomear Button.module.css para ButtonGlobal.module.css
 
-const Button = () => {
+const ButtonGlobal = ({ buttonText = "Clique Aqui", href = "#" }) => { // Adicionei props com valores padrão
   const handleClick = () => {
-    const audio = new Audio('/sounds/coin.mp3') 
-    audio.play()
-  }
+    // Tenta reproduzir o som, mas previne erro se o arquivo não existir
+    const audio = new Audio('/sounds/coin.mp3'); 
+    audio.play().catch(e => console.error("Erro ao reproduzir som:", e));
+  };
 
   return (
     <div className={styles.wrapper}>
       <a
-        href="https://www.sympla.com.br/evento/pssg-porto-seguro-summer-geek/2681310?referrer=www.google.com"
+        href={href} // Usa a prop href
         target="_blank"
         rel="noopener noreferrer"
         onClick={handleClick}
@@ -23,17 +25,7 @@ const Button = () => {
           <svg viewBox="0 0 24 24" className={styles.arr2} xmlns="http://www.w3.org/2000/svg">
             <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
           </svg>
-          <span className={styles.text}>
-            
-            <Image
-              src={Coinvideogame}
-              className={styles.Coinvideogame}
-              alt="Ícone de moeda de videogame" // Texto alternativo adicionado aqui
-              width={50} // Adicione a largura e altura intrínsecas da imagem
-              height={50} // para evitar o layout shift
-            />
-            GARANTIR INGRESSO
-          </span>
+          <span className={styles.text}> {buttonText} </span> {/* Usa a prop buttonText */}
           <span className={styles.circle}></span>
           <svg viewBox="0 0 24 24" className={styles.arr1} xmlns="http://www.w3.org/2000/svg">
             <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
@@ -41,7 +33,7 @@ const Button = () => {
         </button>
       </a>
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default ButtonGlobal;

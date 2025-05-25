@@ -6,13 +6,14 @@ import Main from "@/components/Main";
 import Atracoes from "@/components/Atracoes";
 import Carrocel from "@/components/Carrocel/Carrocel";
 import Card_Discord from "@/components/Card_Discord/Card_Discord";
+import Card_Wpp from "@/components/Card_Wpp/Card_Wpp";
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <Main />
-      <Atracoes />
       <Carrocel />
+      <Atracoes />
       <Card_Discord />
       
 

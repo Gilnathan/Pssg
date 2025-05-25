@@ -68,8 +68,6 @@ export default function Atracoes() {
         Mostre Seu <span>Talento</span>
       </h2>
       <h3>K-Pop, Cosplay, Games e muito mais esperam por você!</h3>
-      
-
       </div>
       
 
