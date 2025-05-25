@@ -46,7 +46,7 @@ export default function SideBar() {
             <button className={styles.closeBtn} onClick={closeMenu}>×</button>
             <Link href="/"><button className={styles.bntSideBarMobile} onClick={closeMenu}><Image src={home} alt="home" className={styles.icon} />Home</button></Link>
             <Link href="/"><button className={styles.bntSideBarMobile} onClick={closeMenu}><Image src={datas} alt="datas" className={styles.icon} />Programação</button></Link>
-            <Link href="/"><button className={styles.bntSideBarMobile} onClick={closeMenu}><Image src={evento} alt="evento" className={styles.icon} />Evento</button></Link>
+            <Link href="/SobreEvento"><button className={styles.bntSideBarMobile} onClick={closeMenu}><Image src={evento} alt="evento" className={styles.icon} />Evento</button></Link>
             <Link href="/"><button className={styles.bntSideBarMobile} onClick={closeMenu}><Image src={contato} alt="contato" className={styles.icon} />Contato</button></Link>
           </div>
         </div>
