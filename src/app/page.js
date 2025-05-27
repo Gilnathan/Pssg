@@ -12,8 +12,10 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Main />
-      <Carrocel />
+      
       <Atracoes />
+      <Carrocel />
+      <Card_Wpp />
       <Card_Discord />
       
 
