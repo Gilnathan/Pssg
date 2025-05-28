@@ -32,7 +32,7 @@ export default function Card_Discord() {
 
                     <ButtonGlobal
                         buttonText="ENTRAR"
-                        href="https://discord.com/"
+                        href="https://discord.gg/Tyj7aMGS"
                     />
                 </div>
             </div>

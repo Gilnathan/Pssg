@@ -32,7 +32,7 @@ export default function Card_Wpp() {
 
                     <ButtonGlobal
                         buttonText="ENTRAR"
-                        href="https://www.sympla.com.br/evento/pssg-porto-seguro-summer-geek/2681310?referrer=www.google.com"
+                        href="https://chat.whatsapp.com/L8dZfW7ytBF9dfdg8BI0MA"
                     />
                 </div>
             </div>

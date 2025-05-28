@@ -12,13 +12,11 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Main />
-      
       <Atracoes />
       <Carrocel />
       <Card_Wpp />
       <Card_Discord />
-      
-
+    
       <footer className={styles.footer}>
         
       </footer>
