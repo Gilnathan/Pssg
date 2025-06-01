@@ -109,8 +109,58 @@
         width: auto;
     }
 }
+ 
 
-/* Para telas muito grandes (ex: 1200px e acima) */
+
+.containerEdicaoAnterior{
+    width: 100%;
+    max-width: 1700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; /* Padding geral para telas menores */
+    gap: 10px; 
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tituloEvento span {
+    color: #ff7a00; /* Laranja */
+}
+
+.Containerimagem{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.imagemCosplay{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    transition: 1s ease; /* Suaviza a transição do hover */
+    
+}
+
+.imagemCosplay:hover {
+    transform: scale(1.20); /* Efeito de zoom ao passar o mouse */
+    transition: transform 0.3s ease; /* Suaviza a transição do zoom */ 
+}
+
+
+@media (max-width: 768px) {
+    .Containerimagem{
+    width: 150px;
+    height: 200px;
+    
+}
+}
+
 @media (min-width: 1200px) {
     .containerLimitado {
         justify-content: center; /* Pode centralizar mais se preferir em telas ultra-largas */

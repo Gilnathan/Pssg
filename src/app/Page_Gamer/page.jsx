@@ -75,7 +75,7 @@ export default function Page_Gamer() {
                     />
                 </div>
             </div>
-            <h2 className={styles.tituloListaJogos}> Títulos Confirmados na Área Gamer </h2>
+            <h2 className={styles.tituloListaJogos}> Títulos Confirmados na <span>Área Gamer</span> </h2>
             <section className={styles.containerJogos}>
                     <CardGames
                     title="Dragon ball budokai tenkaichi 3"

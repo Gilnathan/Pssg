@@ -11,11 +11,21 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 import cosplayrPrincipal from '/public/cosplayrPrincipal.png';
-import img1 from '/public/foto1.png';
-import img2 from '/public/foto2.png';
-import img3 from '/public/foto3.png';
-import img4 from '/public/foto4.png';
-import img5 from '/public/foto5.png';
+import img01 from '/public/img01.jpg';
+import img02 from '/public/img02.jpg';
+import img03 from '/public/img03.jpg';
+import img04 from '/public/img04.jpg';
+import img05 from '/public/img05.jpg';
+import img06 from '/public/img06.jpg';
+import img07 from '/public/img07.jpg';
+import img08 from '/public/img08.jpg';
+import img09 from '/public/img09.jpg';
+import img10 from '/public/img10.jpg';
+import img11 from '/public/img11.jpg';
+import img15 from '/public/cosplayrs.jpg';
+
+
+
 
 export default function Evento(){
     // Crie as referências para os elementos que você quer animar
@@ -73,8 +83,55 @@ export default function Evento(){
                         Prepare seu melhor cosplay (ou cospobre), entre no clima, desfile no palco e concorra a prêmios incríveis em duas categorias superdivertidas:
                     </p>
                     <Button />
-                </div>
+                </div>  
             </div>
+        
+            <h1 className={styles.tituloEvento}> <span> Cosplayers   </span>  Edição 2024 </h1>
+            <section className={styles.containerEdicaoAnterior} >
+                <div className={styles.Containerimagem}>
+                    <Image src={img01} alt="Cosplay Principal" className={styles.imagemCosplay} />
+                </div>
+                
+                <div className={styles.Containerimagem}>
+                    <Image src={img02} alt="Cosplay Principal" className={styles.imagemCosplay} />
+                </div>
+
+                <div className={styles.Containerimagem}>
+                    <Image src={img03} alt="Cosplay Principal" className={styles.imagemCosplay} />
+                </div>
+
+                <div className={styles.Containerimagem}>
+                    <Image src={img04} alt="Cosplay Principal" className={styles.imagemCosplay} />
+                </div>
+
+                <div className={styles.Containerimagem}>
+                    <Image src={img05} alt="Cosplay Principal" className={styles.imagemCosplay} />
+                </div>
+
+                <div className={styles.Containerimagem}>
+                    <Image src={img06} alt="Cosplay Principal" className={styles.imagemCosplay} />
+                </div>
+
+                <div className={styles.Containerimagem}>
+                    <Image src={img08} alt="Cosplay Principal" className={styles.imagemCosplay} />
+                </div>
+
+                <div className={styles.Containerimagem}>
+                    <Image src={img09} alt="Cosplay Principal" className={styles.imagemCosplay} />
+                </div>
+
+                <div className={styles.Containerimagem}>
+                    <Image src={img10} alt="Cosplay Principal" className={styles.imagemCosplay} />
+                </div>
+
+                <div className={styles.Containerimagem}>
+                    <Image src={img15} alt="Cosplay Principal" className={styles.imagemCosplay} />
+                </div>
+
+               
+
+            
+            </section>
             
         </div>
     )
