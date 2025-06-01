@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import Image from 'next/image';
 import Button from "@/components/Button/Button";
 import VideoNaMoldura from "@/components/VideoNaMoldura/VideoNaMoldura";
+import Carrocel from "@/components/Carrocel/Carrocel";
 
 import { useRef } from 'react';
 import { gsap } from 'gsap';
@@ -74,6 +75,7 @@ export default function Evento(){
                     <Button />
                 </div>
             </div>
+            
         </div>
     )
 }

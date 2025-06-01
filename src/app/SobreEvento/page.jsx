@@ -11,7 +11,6 @@ import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 
 import VideoNaMoldura from '@/components/VideoNaMoldura/VideoNaMoldura';
-import ButtonKpop from '@/components/ButtonK-pop/Button';
 import { Car } from 'lucide-react';
 
 export default function SobreEvento() {
@@ -64,11 +63,15 @@ export default function SobreEvento() {
                     </h1>
                     <p className={styles.textoEvento}>
                         Prepare-se para uma imersão épica no universo da cultura geek em pleno coração de Porto Seguro! O Porto Seguro Summer Geek (PSSG) é o seu destino imperdível para celebrar tudo o que amamos: animes, mangás, games, K-Pop, quadrinhos, filmes, séries e muito mais!
-Nascido da paixão por esse mundo vibrante, o PSSG é um evento feito por fãs para fãs, que busca reunir a comunidade geek da região e de todo o Brasil em um só lugar. Aqui, você encontrará um espaço para fazer novas amizades, compartilhar interesses, soltar a criatividade e, claro, se divertir muito!
+                        Nascido da paixão por esse mundo vibrante, o PSSG é um evento feito por fãs para fãs, que busca reunir a comunidade geek da região e de todo o Brasil em um só lugar. Aqui, você encontrará um espaço para fazer novas amizades, compartilhar interesses, soltar a criatividade e, claro, se divertir muito!
                     </p>
         
                 </div>
             </div>
+
+            <section className={styles.containerEdicaopassada}>
+
+            </section>
         </div>
     );
 }

@@ -4,7 +4,9 @@
 
 .containerEvento {
     width: 100vw;
-    background: linear-gradient(to bottom, #D2691E 0%, #008080 100%);
+    background: linear-gradient(to bottom, #1A4B56, #3B97B1);
+    min-height: 100vh; /* Garante que o gradiente cubra toda a altura da viewport */
+    margin: 0; /* Remove margens padrão do body */
     display: flex;
     align-items: center;
     justify-content: center;

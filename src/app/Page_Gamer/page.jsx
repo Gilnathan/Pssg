@@ -13,9 +13,10 @@ import { useGSAP } from '@gsap/react';
 import VideoNaMoldura from '@/components/VideoNaMoldura/VideoNaMoldura';
 import Card_Discord from '@/components/Card_Discord/Card_Discord';
 import ButtonGlobal from '@/components/ButtonGlobal/ButtonGlobal';
+import CardGames from '@/components/CardGames/CardGames'; 
 import { Car } from 'lucide-react';
 
-export default function PageCosplay() {
+export default function Page_Gamer() {
     const videoURL1 = 'Video-K-pop.mp4'; // Já é o caminho correto para public
     const videoURL2 = 'Video-K-pop.mp4'; // Usei o mesmo para exemplo
 
@@ -60,13 +61,13 @@ export default function PageCosplay() {
 
                 <div ref={textoRef} className={styles.containerTexto}> {/* Adicione a ref para a div do texto */}
                     <h1 className={styles.tituloEvento}>
-                        Campeonato de K-Pop (Dance Cover): Mostre Seu Ritmo!
+                        Arena Gamer: Conecte-se e Jogue!
                     </h1>
                     <p className={styles.textoEvento}>
-                        Prepare-se para subir ao palco e mostrar todo o seu talento no nosso Campeonato de K-Pop (Dance Cover)! Se você e seu grupo têm o ritmo, a sincronia e a paixão pelas coreografias mais icônicas do K-Pop, esta é a sua chance de brilhar.
-                    </p>
+                        Prepare-se para entrar no mundo dos games em nossa Arena Gamer! Seja você um jogador casual ou um competidor nato, este é o seu espaço para se divertir, desafiar amigos e explorar os universos digitais mais incríveis.
+                        </p>
                     
-    <p><strong>Venha brilhar no nosso palco e mostrar que o ritmo do K-Pop corre nas suas veias!</strong></p>
+                <p><strong>Nossa Área Gamer foi pensada para proporcionar a melhor experiência de jogo para todos os níveis de jogadores. Chame a galera, escolha seu console e conecte-se à diversão!</strong></p>
                     
                     <ButtonGlobal
                         buttonText="Cadastro para concurso"
@@ -74,6 +75,46 @@ export default function PageCosplay() {
                     />
                 </div>
             </div>
+            <h2 className={styles.tituloListaJogos}> Títulos Confirmados na Área Gamer </h2>
+            <section className={styles.containerJogos}>
+                    <CardGames
+                    title="Dragon ball budokai tenkaichi 3"
+                    description="Emulador PS2"
+                    imageUrl="https://images.igdb.com/igdb/image/upload/t_cover_big/co3r52.jpg" 
+                    
+                    />
+
+                    <CardGames
+                    title="Dragon ball Sparking Zero"
+                    description="PC"
+                    imageUrl="https://image.api.playstation.com/vulcan/ap/rnd/202405/2216/3658b62762b30e4d4b080a58847dd94b60bd24a0a70aab72.png"
+                    
+                    />
+
+                    <CardGames
+                    title="free fire"
+                    description="Celular"
+                    imageUrl="https://wallpapers.com/images/hd/4k-free-fire-punkster-bunny-skin-8qzyivps662a8x2n.jpg" 
+                    
+                    />
+
+                    <CardGames
+                    title="Just Dance 2025"
+                    description="Nintendo Switch"
+                    imageUrl="https://upload.wikimedia.org/wikipedia/pt/9/9c/Just_Dance_2025_Edition.jpg" 
+                    
+                    />
+
+
+                    <CardGames
+                    title="Mario Kart"
+                    description="Nintendo Switch"
+                    imageUrl="https://upload.wikimedia.org/wikipedia/pt/0/0d/MarioKart8.jpg" 
+                    
+                    />
+                    
+
+                </section>
         </div>
     );
 }

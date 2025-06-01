@@ -14,7 +14,7 @@ import Countdown from "../Countdown/Countdown";
 import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger"; // Importe o ScrollTrigger!
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function Atracoes() {
   const containerAtracoesRef = useRef(null);
@@ -45,31 +45,29 @@ export default function Atracoes() {
         y: -50,
         duration: 1,
         ease: "power3.out",
-      })
-        .from(
-          cardsContainerRef.current.children,
-          {
-            opacity: 0,
-            y: 50,
-            stagger: 0.2, // Cada card aparece com um atraso de 0.2 segundos
-            duration: 0.8,
-            ease: "power2.out",
-          },
-          "<0.2" // Começa a animação dos cards 0.2 segundos antes do final da animação do título
-        );
+      }).from(
+        cardsContainerRef.current.children,
+        {
+          opacity: 0,
+          y: 50,
+          stagger: 0.2, // Cada card aparece com um atraso de 0.2 segundos
+          duration: 0.8,
+          ease: "power2.out",
+        },
+        "<0.2" // Começa a animação dos cards 0.2 segundos antes do final da animação do título
+      );
     },
     { scope: containerAtracoesRef }
   );
 
   return (
     <div ref={containerAtracoesRef} className={styles.containeratracoes}>
-      <div className={styles.containerTitulo}>  
-      <h2 ref={tituloRef} className={styles.titulo}>
-        Mostre Seu <span>Talento</span>
-      </h2>
-      <h3>K-Pop, Cosplay, Games e muito mais esperam por você!</h3>
+      <div className={styles.containerTitulo}>
+        <h2 ref={tituloRef} className={styles.titulo}>
+          Mostre Seu <span>Talento</span>
+        </h2>
+        <h3>K-Pop, Cosplay, Games e muito mais esperam por você!</h3>
       </div>
-      
 
       <div ref={cardsContainerRef} className={styles.containerCards}>
         <div className={styles.Card1}>
@@ -78,6 +76,9 @@ export default function Atracoes() {
             descricao="Solte o talento no palco com performances incríveis de K-Pop! Participe sozinho ou com seu grupo e concorra a prêmios mostrando sua paixão pela dança coreana."
             imagem={kpop}
             linkPage="/Page_K-Pop"
+            tituloColor="#ADDB6E" // Example K-Pop pink
+            descricaoColor="#4A4A4A" // Example slightly darker grey
+            stripColor="#ADDB6E" // Example K-Pop vibrant pink strip
           />
         </div>
 
@@ -87,6 +88,9 @@ export default function Atracoes() {
             descricao="Seja com armadura digna de cinema ou papelão e muita criatividade — o importante é se divertir! Mostre sua caracterização, desfile no palco e concorra a prêmios em duas categorias: Cosplay e Cospobre!"
             imagem={cosplayrs}
             linkPage="/Page_cosplay"
+            tituloColor="#3B97B1" // Example Cosplay purple
+            descricaoColor="#4A4A4A" // Example slightly darker grey
+            stripColor="#3B97B1" // Example Cosplay vibrant purple strip
           />
         </div>
 
@@ -95,16 +99,22 @@ export default function Atracoes() {
             titulo="Área Gamer"
             descricao="Diversão garantida para todos os estilos de jogador! Entre na vibe com partidas de MTK, mostre seus passos no Just Dance e dispute nos gramados virtuais do FIFA. É só chegar e jogar!"
             imagem={areagamer}
-            linkPage="/evento-cosplay"
+            linkPage="/Page_Gamer"
+            tituloColor="#4F061D" // Example Gamer blue
+            descricaoColor="#4A4A4A" // Example slightly darker grey
+            stripColor="#4F061D" // Example Gamer vibrant blue strip
           />
         </div>
 
         <div className={styles.Card4}>
           <Card
-            titulo="Quiz Otaku & Gincanas"
+            titulo="Quis Gincanas e Whorkshops"
             descricao="Você é um otaku raiz? Prove seus conhecimentos em nossos quizzes interativos e encare gincanas cheias de desafios. Diversão garantida para todas as idades!."
             imagem={gincana}
             linkPage="/evento-cosplay"
+            tituloColor="#DBB46E" // Example Otaku yellow
+            descricaoColor="#4A4A4A" // Example slightly darker grey
+            stripColor="#DBB46E" // Example Otaku vibrant yellow strip
           />
         </div>
       </div>

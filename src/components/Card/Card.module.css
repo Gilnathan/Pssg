@@ -9,21 +9,25 @@
   overflow: hidden;
   transition: transform 0.3s ease;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  
-
-  
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .card:hover {
   transform: scale(102%);
 }
 
+.topStrip {
+  width: 100%;
+  height: 4px; /* Approximately 1% of 400px min-height */
+  /* The background-color will be set inline via prop */
+}
+
 .imageWrapper {
   position: relative;
   width: 100%;
   height: 180px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .image {
@@ -32,7 +36,6 @@
   height: 100%;
   transition: transform 0.5s ease;
 }
-
 
 .card:hover .image {
   transform: scale(1.5);
@@ -51,16 +54,13 @@
 .content h3 {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #00485b;
-  font-family: "Russo One", sans-serif;
-  
+  font-family: 'Russo One', sans-serif;
 }
 
 .content p {
   font-size: 0.95rem;
-  color: #444;
+  /* color: #444; This will now be overridden by the inline style if descricaoColor is provided */
   line-height: 1.4;
-  
 }
 
 .footer {
@@ -70,7 +70,7 @@
   align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
-  
+
   bottom: 10%;
 }
 
@@ -93,12 +93,8 @@
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-
-  
-  
 }
 
 .button:hover {
   background-color: #006b81;
 }
-
