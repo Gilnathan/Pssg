@@ -74,15 +74,12 @@
 
 @media (min-width: 768px) {
     .containerEvento {
-        /* REMOVIDO: padding-top: 100px; - agora é definido no mobile-first */
         padding-bottom: 100px; /* Volta o padding bottom para desktop */
     }
 
     .containerLimitado {
         flex-direction: row; /* Em telas maiores, os itens ficam lado a lado */
         justify-content: space-around; /* Distribui o espaço entre eles */
-        padding-left: 5%;
-        padding-right: 5%;
         gap: 30px; /* Espaço entre os itens */
     }
 
@@ -154,11 +151,7 @@
 
 
 @media (max-width: 768px) {
-    .Containerimagem{
-    width: 150px;
-    height: 200px;
     
-}
 }
 
 @media (min-width: 1200px) {
