@@ -12,7 +12,7 @@ import Whatsappicon from '../../../public/Whatsapp_icon.json';
 export default function Card_Wpp() {
     return(
         <div className={styles.container}>
-            {/* O card não é mais um link */}
+            
             <div className={styles.card}>
                 <div className={styles.containerInfomaçoes}>
                     <div className={styles.lottieIcon}> 

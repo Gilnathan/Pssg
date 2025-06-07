@@ -5,6 +5,13 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: linear-gradient(to bottom,
+    rgba(0, 71, 91, 0.425) 0vh,    /* Transparente desde o início (0vh) */
+    rgba(0, 71, 91, 0.637) 90.0vh, /* Continua transparente até quase 100vh */
+    #003d4a 100vh,             /* O gradiente COM COR começa em 100vh */
+    #00475b 150vh              /* Transiciona para a cor final */
+)
+  
 
 }
 

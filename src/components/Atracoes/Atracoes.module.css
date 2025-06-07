@@ -6,8 +6,6 @@
     align-items: center;
     justify-content: space-around;   
     flex-direction: column;
-
-    background-color: #00485b;
     gap: 30px;
 }
 .containerCards{
@@ -15,15 +13,15 @@
     max-width: 1550px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
 .containeratracoes {
-    background-color: #00485b;
     padding: 40px 20px;
     text-align: center;
+    justify-content: center;
     color: white;
   }
   
@@ -35,7 +33,7 @@
   }
   
   .titulo span {
-    color: #ff7a00; /* Laranja */
+    color: #ff7a00; 
   }
 
   .Card1{

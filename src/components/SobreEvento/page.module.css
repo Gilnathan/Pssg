@@ -1,0 +1,89 @@
+
+
+.container {
+  padding-top: 100px; /* Reduzi o padding top para telas menores */
+  display: flex;
+  min-height: 10vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+  flex-wrap: wrap;
+}
+
+
+.containerLimitado {
+  
+  width: 100%;
+  max-width:900px;
+  display: flex;
+  flex-direction: column; /* Em mobile, os itens se empilham verticalmente */
+  align-items: center; /* Centraliza os itens quando empilhados */
+  justify-content: center; /* Centraliza verticalmente o conteúdo quando empilhado */
+  padding: 20px; /* Padding geral para telas menores */
+  gap: 40px; /* Espaço entre o vídeo e o texto */
+  text-align: center; /* Centraliza o texto por padrão em mobile */
+}
+
+.containerTexto {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo do texto em mobile */
+  padding: 20px; /* Ajuste o padding se necessário */
+  gap: 20px;
+  text-align: center; /* Garante que o texto esteja centralizado */
+}
+
+.tituloEvento {
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-weight: 600;
+  font-size: 2.2rem; /* Tamanho de fonte menor para mobile */
+  line-height: 1.2; /* Melhora a legibilidade */
+  text-align: start; 
+  font-size: 2.5rem;
+}
+
+.tituloEvento span {
+  color: #ff7a00; 
+}
+
+.textoEvento {
+  color: white;
+  font-size: 1.1em; /* Tamanho de fonte ajustado para mobile */
+  line-height: 1.5; /* Melhora a legibilidade */
+  text-align: start; 
+}
+
+.lottieIcon {
+  width: 100vw;
+  max-width: 900px; 
+  height: auto;
+  flex-shrink: 0; /* Garante que o ícone não encolha demais */
+}
+
+/* ================================================================= */
+/* Media Queries - Estilos para Telas Maiores */
+/* ================================================================= */
+
+/* Para tablets e telas maiores (ex: 768px e acima) */
+@media (min-width: 768px) {
+  .containerTexto {
+    align-items: flex-start; /* Alinha o texto à esquerda em desktop */
+    
+  }
+
+  .textoEvento {
+    font-size: 1.3em; /* Volta o tamanho de fonte original para desktop */
+  }
+}
+
+/* Para telas muito grandes (ex: 1200px e acima) */
+@media (min-width: 1200px) {
+  .containerLimitado {
+    justify-content: center; /* Pode centralizar mais se preferir em telas ultra-largas */
+    gap: 60px; /* Aumenta o gap em telas muito grandes */
+  }
+}

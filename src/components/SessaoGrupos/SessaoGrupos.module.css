@@ -1,0 +1,42 @@
+.sessaoGamer{
+    width: 100vw;
+    max-width: 1600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    flex-direction: row;
+}
+
+.lottieIcon {
+  width: 40vw; 
+  height: auto;
+  flex-shrink: 0; /* Garante que o ícone não encolha demais */
+}
+
+.containerInformacoes{
+    width: 100%;
+    max-width: 600px;
+}
+
+.tituloEvento {
+  color: #ffffff;
+  font-family: "Russo One", sans-serif;
+  font-weight: 600;
+  font-size: 3.2rem; /* Tamanho de fonte menor para mobile */
+  line-height: 1.2; /* Melhora a legibilidade */
+}
+.containerInformacoes span {
+  color: #ff7a00;
+}
+.descricao{
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1445px) {
+  .sessaoGamer {
+    flex-wrap: wrap;
+  }
+
+}

@@ -8,18 +8,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #00475b;
   overflow-x: hidden; /* Garante que não haverá rolagem horizontal */
 }
 
-
+/* Removido: .cardLink e seus estilos de hover/active */
+/* Se você quiser um efeito de clique visual no .card sem que ele seja um link,
+   poderíamos adicionar estilos de :active diretamente ao .card, mas por enquanto,
+   estou removendo a transição de clique.*/
 
 .card {
   width: 100%; /* Garante que o .card preencha o .container */
-  max-width: 1550px; /* Mantém a largura máxima */
   background-color: white;
   border-radius: 20px;
-  padding: 20px; /* Padding menor para mobile */
   text-align: center;
   display: flex;
   align-items: center; /* Centraliza o containerInfomaçoes dentro do card */
@@ -30,19 +30,13 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
-  background-image: url(https://a-static.besthdwallpaper.com/anime-art-night-sky-scenery-wallpaper-2560x960-90501_87.jpg);
+  background-image: url(https://external-preview.redd.it/ymGVMOxXyh3oep0_9qp45rdHFa-81kll90NAH8pqbAg.jpg?auto=webp&s=ea5510d95deef553533b5d9913c70170def133f0);
   background-size: cover;
   background-position: center;
 
-  /* Se você quiser um efeito de "clique" puramente visual (sem link), pode adicionar isso: */
-  /* transition: transform 0.1s ease, box-shadow 0.1s ease; */
+  
 }
 
-/* Se você adicionou a transição acima no .card, pode adicionar esses estados: */
-/* .card:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-} */
 
 .containerInfomaçoes {
   width: 100%;
@@ -95,12 +89,10 @@
 
 /* Para tablets e telas maiores (ex: 768px e acima) */
 @media (min-width: 768px) {
-  .container {
-    padding: 40px; /* Volta o padding original para desktop */
-  }
+
 
   .card {
-    height: 150px; /* Volta a altura fixa para desktop */
+    height: 200px; /* Volta a altura fixa para desktop */
     padding: 30px; /* Volta o padding original do card */
   }
 
@@ -112,8 +104,8 @@
   }
 
   .lottieIcon {
-    width: 120px; /* Volta o tamanho original do ícone para desktop */
-    height: 120px; /* Volta o tamanho original do ícone para desktop */
+    height: 100px; 
+    width: auto;
   }
 
   .containerTitulo {
@@ -122,17 +114,11 @@
   }
 
   .titulo {
-    font-size: 3rem; /* Volta o tamanho de fonte original para desktop */
+    font-size: 2rem; /* Volta o tamanho de fonte original para desktop */
     letter-spacing: 3px; /* Volta o letter-spacing original */
   }
 
   .containerTitulo h3 {
     font-size: 1em; /* Volta o tamanho da fonte original para o subtítulo em desktop */
   }
-}
-
-/* Para telas muito grandes (ex: 1200px e acima) - Opcional */
-@media (min-width: 1200px) {
-  /* Adicione ajustes específicos para telas muito grandes se necessário */
-  /* Ex: Aumentar o gap ou ajustar o padding */
 }

@@ -12,7 +12,7 @@
   flex-direction: column; /* Em mobile, os elementos se empilham */
   align-items: center; /* Centraliza o conteúdo horizontalmente */
   justify-content: center;
-  background-color: #00475bcc;
+  background-color: #00475b00;
   padding-bottom: 50px; /* Garante espaço na parte inferior */
 }
 

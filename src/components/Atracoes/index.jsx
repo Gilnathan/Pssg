@@ -1,4 +1,3 @@
-// components/Atracoes/Atracoes.jsx
 "use client";
 
 import styles from "./Atracoes.module.css";
@@ -76,9 +75,9 @@ export default function Atracoes() {
             descricao="Solte o talento no palco com performances incríveis de K-Pop! Participe sozinho ou com seu grupo e concorra a prêmios mostrando sua paixão pela dança coreana."
             imagem={kpop}
             linkPage="/Page_K-Pop"
-            tituloColor="#ADDB6E" // Example K-Pop pink
-            descricaoColor="#4A4A4A" // Example slightly darker grey
-            stripColor="#ADDB6E" // Example K-Pop vibrant pink strip
+            tituloColor="#ADDB6E"
+            descricaoColor="#4A4A4A"
+            stripColor="#ADDB6E"
           />
         </div>
 
@@ -88,23 +87,26 @@ export default function Atracoes() {
             descricao="Seja com armadura digna de cinema ou papelão e muita criatividade — o importante é se divertir! Mostre sua caracterização, desfile no palco e concorra a prêmios em duas categorias: Cosplay e Cospobre!"
             imagem={cosplayrs}
             linkPage="/Page_cosplay"
-            tituloColor="#3B97B1" // Example Cosplay purple
-            descricaoColor="#4A4A4A" // Example slightly darker grey
-            stripColor="#3B97B1" // Example Cosplay vibrant purple strip
+            tituloColor="#3B97B1"
+            descricaoColor="#4A4A4A"
+            stripColor="#3B97B1"
           />
         </div>
-
+        
+        {/* The "Área Gamer" card is commented out below: */}
+        {/*
         <div className={styles.Card3}>
           <Card
             titulo="Área Gamer"
             descricao="Diversão garantida para todos os estilos de jogador! Entre na vibe com partidas de MTK, mostre seus passos no Just Dance e dispute nos gramados virtuais do FIFA. É só chegar e jogar!"
             imagem={areagamer}
             linkPage="/Page_Gamer"
-            tituloColor="#4F061D" // Example Gamer blue
-            descricaoColor="#4A4A4A" // Example slightly darker grey
-            stripColor="#4F061D" // Example Gamer vibrant blue strip
+            tituloColor="#4F061D"
+            descricaoColor="#4A4A4A"
+            stripColor="#4F061D"
           />
         </div>
+        */}
 
         <div className={styles.Card4}>
           <Card
@@ -112,9 +114,9 @@ export default function Atracoes() {
             descricao="Você é um otaku raiz? Prove seus conhecimentos em nossos quizzes interativos e encare gincanas cheias de desafios. Diversão garantida para todas as idades!."
             imagem={gincana}
             linkPage="/evento-cosplay"
-            tituloColor="#DBB46E" // Example Otaku yellow
-            descricaoColor="#4A4A4A" // Example slightly darker grey
-            stripColor="#DBB46E" // Example Otaku vibrant yellow strip
+            tituloColor="#DBB46E"
+            descricaoColor="#4A4A4A"
+            stripColor="#DBB46E"
           />
         </div>
       </div>

@@ -5,8 +5,6 @@ import Lottie from 'lottie-react';
 import styles from './discordCard.module.css';
 import ButtonGlobal from '../ButtonGlobal/ButtonGlobal';
 
-// Se seu componente está em src/components/Card_Discord/Card_Discord.jsx
-// e o JSON está em public/Discord_icon.json
 import DiscordIconAnimation from '../../../public/Discord_icon.json'; 
 
 export default function Card_Discord() {
