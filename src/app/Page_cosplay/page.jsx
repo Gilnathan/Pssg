@@ -2,7 +2,7 @@
 
 import styles from "./page.module.css";
 import Image from 'next/image';
-import Button from "@/components/Button/Button";
+import ButtonGlobal from '@/components/ButtonGlobal/ButtonGlobal';
 import VideoNaMoldura from "@/components/VideoNaMoldura/VideoNaMoldura";
 import Carrocel from "@/components/Carrocel/Carrocel";
 
@@ -82,7 +82,10 @@ export default function Evento(){
                         Não importa se você vem com uma armadura digna de Hollywood ou com papelão, fita crepe e MUITA criatividade — aqui, o que vale é a paixão e a diversão!
                         Prepare seu melhor cosplay (ou cospobre), entre no clima, desfile no palco e concorra a prêmios incríveis em duas categorias superdivertidas:
                     </p>
-                    <Button />
+                    <ButtonGlobal
+                        buttonText="Cadastro para concurso"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdErmqihJNqHe_lB34chYdqwFYVrVZLzZCh1Su5qHg5ToNxaw/viewform"
+                    />
                 </div>  
             </div>
         

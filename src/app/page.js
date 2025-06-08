@@ -8,11 +8,12 @@ import Card_Wpp from "@/components/Card_Wpp/Card_Wpp";
 import SessaoGamer from "@/components/SessaoGamer/SessaoGamer";
 import SessaoGrupos from "@/components/SessaoGrupos/SessaoGrupos";
 import SobreEvento from "@/components/SobreEvento";
-
+import LoadingScrean from "@/components/LoadingScrean/loadingScrean";
 
 export default function Home() {
   return (
     <div className={styles.page}>
+      <LoadingScrean />
       <Main />
       <SobreEvento />
       <Atracoes />
