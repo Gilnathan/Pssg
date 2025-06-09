@@ -75,7 +75,7 @@ export default function Atracoes() {
             descricao="Solte o talento no palco com performances incríveis de K-Pop! Participe sozinho ou com seu grupo e concorra a prêmios mostrando sua paixão pela dança coreana."
             imagem={kpop}
             linkPage="/Page_K-Pop"
-            tituloColor="#ADDB6E"
+            tituloColor="#00485b"
             descricaoColor="#4A4A4A"
             stripColor="#ADDB6E"
           />
@@ -87,7 +87,7 @@ export default function Atracoes() {
             descricao="Seja com armadura digna de cinema ou papelão e muita criatividade — o importante é se divertir! Mostre sua caracterização, desfile no palco e concorra a prêmios em duas categorias: Cosplay e Cospobre!"
             imagem={cosplayrs}
             linkPage="/Page_cosplay"
-            tituloColor="#3B97B1"
+            tituloColor="#00485b"
             descricaoColor="#4A4A4A"
             stripColor="#3B97B1"
           />
@@ -114,7 +114,7 @@ export default function Atracoes() {
             descricao="Você é um otaku raiz? Prove seus conhecimentos em nossos quizzes interativos e encare gincanas cheias de desafios. Diversão garantida para todas as idades!."
             imagem={gincana}
             linkPage="/evento-cosplay"
-            tituloColor="#DBB46E"
+            tituloColor="#00485b"
             descricaoColor="#4A4A4A"
             stripColor="#DBB46E"
           />

@@ -4,10 +4,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
     flex-direction: column;
     margin-top: 40px;
 }
+
 
 .container{
   display: flex;
@@ -16,11 +16,11 @@
   flex-wrap: wrap;
   margin-bottom: 30px;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .lottieIcon {
-  width: 40vw;
+  width: 35vw;
   max-width: 900px; /* Limita a largura máxima do ícone */
   height: auto;
   flex-shrink: 0; /* Garante que o ícone não encolha demais */
@@ -28,15 +28,16 @@
 
 .containerInformacoes{
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .tituloEvento {
   color: #ffffff;
   font-family: "Russo One", sans-serif;
   font-weight: 600;
-  font-size: 3.2rem; /* Tamanho de fonte menor para mobile */
-  line-height: 1.2; /* Melhora a legibilidade */
+  font-size: 3.2rem; 
+  line-height: 1.2; 
+  
 }
 .containerInformacoes span {
   color: #ff7a00;
@@ -80,14 +81,7 @@
     margin-bottom: 30px;
   }
 
-  .containerInformacoes {
-    max-width: 100%; /* Allow info container to take full width */
-  }
-
-  .tituloEvento {
-    font-size: 4.5rem;
-    text-align: start;
-  }
+  
 
   .descricao {
     font-size: 1.2rem;
@@ -97,11 +91,12 @@
 
 @media (max-width: 768px) {
   .sessaoGamer {
-    padding: 20px;
+    padding: 0px;
   }
 
   .lottieIcon {
-    display: none; /* Hide lottieIcon on mobile */
+    width: 80vw; /* Adjust width for smaller screens */
+    
   }
 
   .containerInformacoes {
@@ -115,25 +110,35 @@
 }
 
 @media (max-width: 576px) {
-  .sessaoGamer {
-    padding: 15px;
-  }
 
+
+  .tituloEvento span {
+    font-size: 2rem;
+  }
   .tituloEvento {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    line-height: 1.1; /* Adjust line height for better readability */
+    margin-bottom: 20px; /* Add margin for spacing */
+    text-align: center; /* Center title on small screens */
   }
 
   .descricao {
     font-size: 1rem;
+    text-align: start;
   }
+  .containerInformacoes{
+    width: 100%;
+}
 
-  .containerJogos {
-    gap: 15px; /* Reduce gap between cards on smaller screens */
-  }
 }
 
 @media (max-width: 400px) {
   .tituloEvento {
-    font-size: 1.5rem;
+    font-size: 4rem;    
   }
+  .tituloEvento span {
+    font-size: 1.3rem;
+    
+  }
+  
 }

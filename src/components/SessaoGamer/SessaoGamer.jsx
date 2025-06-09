@@ -22,7 +22,7 @@ export default function SessaoGamer() {
         </div>
         <div className={styles.containerInformacoes}>
           <h2 className={styles.tituloEvento}>
-            Sessão Gamer <br /> <span>Domine ou Divirta-se!</span>
+            Sessão Gamer <br /> <span>Competição e Diversão!</span>
           </h2>
           <p className={styles.descricao}>
             Entre na nossa Arena Gamer e encontre o seu lugar no universo dos
@@ -58,7 +58,7 @@ export default function SessaoGamer() {
 
         <CardGames
           title="Just Dance"
-          description="Jogando Casualmente"
+          description="Jogar Casualmente"
           imageUrl="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70070000017893/2e1cdcae1a7662012ff11f46b068a795c239d178cf414af2b963fca03d8ce420"
           linkPage="/play/competitive"
           competitive="Ncompetitivo"
