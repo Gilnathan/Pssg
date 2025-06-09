@@ -30,7 +30,7 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 
-  background-image: url(https://external-preview.redd.it/ymGVMOxXyh3oep0_9qp45rdHFa-81kll90NAH8pqbAg.jpg?auto=webp&s=ea5510d95deef553533b5d9913c70170def133f0);
+  background-image: url(https://a-static.besthdwallpaper.com/anime-art-night-sky-scenery-wallpaper-2560x960-90501_87.jpg);
   background-size: cover;
   background-position: center;
 
@@ -94,6 +94,7 @@
   .card {
     height: 200px; /* Volta a altura fixa para desktop */
     padding: 30px; /* Volta o padding original do card */
+
   }
 
   .containerInfomaçoes {
@@ -101,6 +102,7 @@
     flex-direction: row; /* Ícone e título ficam lado a lado */
     justify-content: space-between; /* Distribui o espaço entre eles */
     gap: 20px; /* Volta o gap original */
+    padding: 10px;
   }
 
   .lottieIcon {

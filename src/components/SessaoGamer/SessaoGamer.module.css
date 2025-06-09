@@ -1,11 +1,12 @@
 .sessaoGamer{
-    width: 100%;
+    width:80%;
     max-width: 1600px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
     flex-direction: column;
+    margin-top: 40px;
 }
 
 .container{

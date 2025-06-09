@@ -1,37 +1,44 @@
 'use client';
 
-import { useState, useEffect } from 'react'; // Importe useState e useEffect
+import { useState, useEffect } from 'react';
 import styles from './loadingScrean.module.css';
 import Lottie from "lottie-react";
 import loadingScreanAnimation from '../../../public/loadingScrean.json';
 
-
 export default function LoadingScrean() {
-    const [isVisible, setIsVisible] = useState(true); // Estado para controlar a visibilidade do componente
+    const [isVisible, setIsVisible] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => { // Define um temporizador
-            setIsVisible(false); // Após 5 segundos, define isVisible como false
-        }, 4000); // 5000 milissegundos = 5 segundos
+        // Check if the loading screen has been shown in this session
+        const hasBeenShown = sessionStorage.getItem('loadingScreenShown');
 
-        return () => clearTimeout(timer); // Limpa o temporizador se o componente for desmontado
-    }, []); // O array vazio garante que o useEffect seja executado apenas uma vez, na montagem do componente
+        if (hasBeenShown) {
+            setIsVisible(false); // If it has been shown, hide it immediately
+            return;
+        }
 
-    if (!isVisible) { // Se isVisible for false, o componente não renderiza nada
+        const timer = setTimeout(() => {
+            setIsVisible(false);
+            sessionStorage.setItem('loadingScreenShown', 'true'); // Mark as shown after it disappears
+        }, 4000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (!isVisible) {
         return null;
     }
 
     return (
         <div className={styles.container}>
             <div className={styles.lottieIcon}>
-                        <Lottie
-                            animationData={loadingScreanAnimation}
-                            loop={false}
-                            autoplay={true}
-                            style={{ width: '100%', height: '100%' }}
-                        />
+                <Lottie
+                    animationData={loadingScreanAnimation}
+                    loop={false}
+                    autoplay={true}
+                    style={{ width: '100%', height: '100%' }}
+                />
             </div>
-
         </div>
     );
 }
