@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import styles from './loadingScrean.module.css';
 import Lottie from "lottie-react";
 import loadingScreanAnimation from '../../../public/loadingScrean.json';
+import Image from 'next/image'; 
+
 
 export default function LoadingScrean() {
     const [isVisible, setIsVisible] = useState(true);
@@ -31,7 +33,9 @@ export default function LoadingScrean() {
 
     return (
         <div className={styles.container}>
+            
             <div className={styles.lottieIcon}>
+                
                 <Lottie
                     animationData={loadingScreanAnimation}
                     loop={false}
