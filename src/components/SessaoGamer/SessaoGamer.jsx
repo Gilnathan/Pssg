@@ -36,32 +36,32 @@ export default function SessaoGamer() {
       <div className={styles.containerJogos}>
         <CardGames
           title="Dragon ball z budokai tenkaichi 3"
-          description="competitivo"
+          description="jogo competitivo"
           imageUrl="https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co3r52.jpg"
           linkPage="/play/competitive"
-          competitive="competitivo"
+          competitive="jogo competitivo"
         />
         <CardGames
           title="Mario kart "
-          description="competitivo"
+          description="jogo competitivo"
           imageUrl="https://upload.wikimedia.org/wikipedia/pt/0/0d/MarioKart8.jpg"
           linkPage="/play/competitive"
-          competitive="competitivo"
+          competitive="jogo competitivo"
         />
         <CardGames
           title="Mortal kombat 11"
-          description="competitivo"
+          description="jogo competitivo"
           imageUrl="https://store-images.s-microsoft.com/image/apps.31077.70804610839547354.8da93c46-fd13-4b16-8ebe-e8e02c53d93e.032a1c73-7961-4acf-a82a-89d2f3ccdd1f?q=90&w=480&h=270"
           linkPage="/play/competitive"
-          competitive="competitivo"
+          competitive="jogo competitivo"
         />
 
         <CardGames
           title="Just Dance"
-          description="Jogar Casualmente"
+          description="jogo casual"
           imageUrl="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70070000017893/2e1cdcae1a7662012ff11f46b068a795c239d178cf414af2b963fca03d8ce420"
           linkPage="/play/competitive"
-          competitive="Ncompetitivo"
+          competitive="jogo casual"
         />
       </div>
     </section>

@@ -53,10 +53,10 @@ export default function Atracoes() {
           duration: 0.8,
           ease: "power2.out",
         },
-        "<0.2" // Começa a animação dos cards 0.2 segundos antes do final da animação do título
+        "<0.2", // Começa a animação dos cards 0.2 segundos antes do final da animação do título
       );
     },
-    { scope: containerAtracoesRef }
+    { scope: containerAtracoesRef },
   );
 
   return (
@@ -68,8 +68,15 @@ export default function Atracoes() {
         <h3>K-Pop, Cosplay, Games e muito mais esperam por você!</h3>
       </div>
 
-      <div ref={cardsContainerRef} className={styles.containerCards}>
-        <div className={styles.Card1}>
+      <div
+        ref={cardsContainerRef}
+        className={styles.containerCards}
+        style={{ alignItems: "stretch" }}
+      >
+        <div
+          className={styles.Card1}
+          style={{ width: "100%", maxWidth: "350px" }}
+        >
           <Card
             titulo="Campeonato de K-Pop (Dance Cover)"
             descricao="Solte o talento no palco com performances incríveis de K-Pop! Participe sozinho ou com seu grupo e concorra a prêmios mostrando sua paixão pela dança coreana."
@@ -81,7 +88,10 @@ export default function Atracoes() {
           />
         </div>
 
-        <div className={styles.Card2}>
+        <div
+          className={styles.Card2}
+          style={{ width: "100%", maxWidth: "350px" }}
+        >
           <Card
             titulo="Concurso Cosplay & Cospobre"
             descricao="Seja com armadura digna de cinema ou papelão e muita criatividade — o importante é se divertir! Mostre sua caracterização, desfile no palco e concorra a prêmios em duas categorias: Cosplay e Cospobre!"
@@ -92,7 +102,7 @@ export default function Atracoes() {
             stripColor="#3B97B1"
           />
         </div>
-        
+
         {/* The "Área Gamer" card is commented out below: */}
         {/*
         <div className={styles.Card3}>
@@ -108,10 +118,13 @@ export default function Atracoes() {
         </div>
         */}
 
-        <div className={styles.Card4}>
+        <div
+          className={styles.Card4}
+          style={{ width: "100%", maxWidth: "350px" }}
+        >
           <Card
-            titulo="Quis Gincanas e Whorkshops"
-            descricao="Você é um otaku raiz? Prove seus conhecimentos em nossos quizzes interativos e encare gincanas cheias de desafios. Diversão garantida para todas as idades!."
+            titulo="Quiz, Gincanas e Workshops"
+            descricao="Você é um otaku raiz? Prove seus conhecimentos em nossos quizzes interativos e encare gincanas cheias de desafios. Diversão garantida para todas as idades!"
             imagem={gincana}
             linkPage="/evento-cosplay"
             tituloColor="#00485b"

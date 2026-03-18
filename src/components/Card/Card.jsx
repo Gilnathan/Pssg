@@ -1,7 +1,7 @@
-import styles from './Card.module.css'
-import Image from 'next/image'
-import { Clock } from 'lucide-react'
-import Link from 'next/link'
+import styles from "./CardStyled.module.css";
+import Image from "next/image";
+import { Clock } from "lucide-react";
+import Link from "next/link";
 
 export default function Card({
   titulo,
@@ -9,15 +9,36 @@ export default function Card({
   horario,
   imagem,
   linkPage,
-  tituloColor, // New prop for title color
-  descricaoColor, // New prop for description color
-  stripColor, // New prop for the strip color
+  tituloColor,
+  descricaoColor,
+  stripColor,
+  children,
+  badge,
+  badgeColor,
+  buttonLabel,
+  icon: Icon,
 }) {
   return (
     <div className={styles.card}>
-      {/* New: Customizable colored strip */}
-      {stripColor && (
-        <div className={styles.topStrip} style={{ backgroundColor: stripColor }}></div>
+      {/* Header with badge and icon */}
+      {(titulo || badge || Icon) && (
+        <div
+          className={styles.cardHeader}
+          style={stripColor ? { borderBottomColor: stripColor } : {}}
+        >
+          <div className={styles.headerContent}>
+            {Icon && <Icon className={styles.headerIcon} size={24} />}
+            <h3 className={styles.headerTitle}>{titulo}</h3>
+          </div>
+          {badge && (
+            <div
+              className={styles.badge}
+              style={{ backgroundColor: badgeColor || "#ffd080" }}
+            >
+              {badge}
+            </div>
+          )}
+        </div>
       )}
 
       {imagem && (
@@ -26,8 +47,10 @@ export default function Card({
         </div>
       )}
       <div className={styles.content}>
-        <h3 style={{ color: tituloColor }}>{titulo}</h3>
+        {!titulo && <h3 style={{ color: tituloColor }}>Placeholder</h3>}
         <p style={{ color: descricaoColor }}>{descricao}</p>
+
+        {children && <div className={styles.childrenContainer}>{children}</div>}
 
         <div className={styles.footer}>
           {horario && (
@@ -37,11 +60,12 @@ export default function Card({
             </div>
           )}
           <Link href={linkPage}>
-            {' '}
-            <button className={styles.button}>Saiba mais</button>{' '}
+            <button className={styles.button}>
+              {buttonLabel || "Saiba mais"}
+            </button>
           </Link>
         </div>
       </div>
     </div>
-  )
+  );
 }

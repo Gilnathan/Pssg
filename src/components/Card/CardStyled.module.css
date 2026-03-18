@@ -1,22 +1,24 @@
 .card {
   display: flex;
   flex-direction: column;
-  height: 600px;
   width: 100%;
   max-width: 350px;
-  border-radius: 10px;
-  background-color: white;
+  background-color: #ffffff;
+  border-radius: 16px;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   cursor: pointer;
-  box-shadow:
-    rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+  position: relative;
 }
 
 .card:hover {
-  transform: scale(102%);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
 .cardHeader {
@@ -24,86 +26,82 @@
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(135deg, #002366 0%, #003d7a 100%);
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   min-height: 70px;
   gap: 1rem;
+  border-bottom: 4px solid transparent;
 }
 
 .headerContent {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  flex: 1;
 }
 
 .headerIcon {
-  color: #ffffff;
-  stroke-width: 2;
+  color: #ffd080;
 }
 
 .headerTitle {
   font-family: "Russo One", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #ffffff;
   margin: 0;
-  white-space: nowrap;
+  line-height: 1.2;
 }
 
 .badge {
   background-color: #ffd080;
   color: #002366;
+  font-family: "Russo One", sans-serif;
   padding: 0.35rem 0.75rem;
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
-}
-
-.topStrip {
-  width: 100%;
-  height: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .imageWrapper {
   position: relative;
   width: 100%;
-  height: 180px;
+  height: 200px;
   overflow: hidden;
 }
 
 .image {
   object-fit: cover;
-  width: 100%;
-  height: 100%;
   transition: transform 0.5s ease;
 }
 
 .card:hover .image {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 .content {
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  text-align: start;
-  position: relative;
+  gap: 1rem;
   flex: 1;
+  background-color: #fff;
 }
 
 .content h3 {
   font-size: 1.25rem;
   font-weight: 600;
   font-family: "Russo One", sans-serif;
+  margin: 0;
 }
 
-.content p {
-  font-size: 0.95rem;
-  /* color: #444; This will now be overridden by the inline style if descricaoColor is provided */
-  line-height: 1.4;
+.childrenContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  width: 100%;
 }
 
 .footer {
@@ -112,9 +110,8 @@
   justify-content: space-between;
   align-items: center;
   gap: 0.5rem;
-  flex-wrap: wrap;
-
-  bottom: 10%;
+  padding-top: 1rem;
+  border-top: 1px solid #f0f0f0;
 }
 
 .horario {
@@ -123,30 +120,27 @@
   gap: 0.4rem;
   font-size: 0.85rem;
   color: #555;
+  font-weight: 600;
 }
 
 .button {
   background-color: #00485b;
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
   font-weight: bold;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .button:hover {
-  background-color: #006b81;
-}
-
-.childrenContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.75rem 0;
-  width: 100%;
-  margin: 0.5rem 0;
+  background-color: #ffd080;
+  color: #002366;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
