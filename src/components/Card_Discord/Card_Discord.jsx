@@ -2,12 +2,21 @@
 'use client';
 
 import Lottie from 'lottie-react';
+import { useState, useEffect } from 'react';
 import styles from './discordCard.module.css';
 import ButtonGlobal from '../ButtonGlobal/ButtonGlobal';
 
-import DiscordIconAnimation from '../../../public/Discord_icon.json'; 
-
 export default function Card_Discord() {
+    const [animationData, setAnimationData] = useState(null);
+
+    useEffect(() => {
+        fetch('/Discord_icon.json')
+            .then(res => res.json())
+            .then(data => setAnimationData(data))
+            .catch(err => console.error('Erro ao carregar animação Discord:', err));
+    }, []);
+
+    if (!animationData) return null;
     return(
         <div className={styles.container}>
             {/* O card não é mais um link */}
@@ -15,7 +24,7 @@ export default function Card_Discord() {
                 <div className={styles.containerInfomaçoes}>
                     <div className={styles.lottieIcon}> 
                         <Lottie
-                            animationData={DiscordIconAnimation}
+                            animationData={animationData}
                             loop={true}
                             autoplay={true}
                             style={{ width: '100%', height: '100%' }} 

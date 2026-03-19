@@ -10,20 +10,6 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 
-import cosplayrPrincipal from "/public/cosplayrPrincipal.png";
-import img01 from "/public/img01.jpg";
-import img02 from "/public/img02.jpg";
-import img03 from "/public/img03.jpg";
-import img04 from "/public/img04.jpg";
-import img05 from "/public/img05.jpg";
-import img06 from "/public/img06.jpg";
-import img07 from "/public/img07.jpg";
-import img08 from "/public/img08.jpg";
-import img09 from "/public/img09.jpg";
-import img10 from "/public/img10.jpg";
-import img11 from "/public/img11.jpg";
-import img15 from "/public/cosplayrs.jpg";
-
 export default function Evento() {
   // Crie as referências para os elementos que você quer animar
   const containerEventoRef = useRef(null); // Ref para o contêiner principal (escopo)
@@ -105,81 +91,101 @@ export default function Evento() {
       <section className={styles.containerEdicaoAnterior}>
         <div className={styles.Containerimagem}>
           <Image
-            src={img01}
+            src="/img01.jpg"
             alt="Cosplay Principal"
             className={styles.imagemCosplay}
+            width={300}
+            height={500}
           />
         </div>
 
         <div className={styles.Containerimagem}>
           <Image
-            src={img02}
+            src="/img02.jpg"
             alt="Cosplay Principal"
             className={styles.imagemCosplay}
+            width={300}
+            height={500}
           />
         </div>
 
         <div className={styles.Containerimagem}>
           <Image
-            src={img03}
+            src="/img03.jpg"
             alt="Cosplay Principal"
             className={styles.imagemCosplay}
+            width={300}
+            height={500}
           />
         </div>
 
         <div className={styles.Containerimagem}>
           <Image
-            src={img04}
+            src="/img04.jpg"
             alt="Cosplay Principal"
             className={styles.imagemCosplay}
+            width={300}
+            height={500}
           />
         </div>
 
         <div className={styles.Containerimagem}>
           <Image
-            src={img05}
+            src="/img05.jpg"
             alt="Cosplay Principal"
             className={styles.imagemCosplay}
+            width={300}
+            height={500}
           />
         </div>
 
         <div className={styles.Containerimagem}>
           <Image
-            src={img06}
+            src="/img06.jpg"
             alt="Cosplay Principal"
             className={styles.imagemCosplay}
+            width={300}
+            height={500}
           />
         </div>
 
         <div className={styles.Containerimagem}>
           <Image
-            src={img08}
+            src="/img08.jpg"
             alt="Cosplay Principal"
             className={styles.imagemCosplay}
+            width={300}
+            height={500}
           />
         </div>
 
         <div className={styles.Containerimagem}>
           <Image
-            src={img09}
+            src="/img09.jpg"
             alt="Cosplay Principal"
             className={styles.imagemCosplay}
+            width={300}
+            height={500}
           />
         </div>
 
         <div className={styles.Containerimagem}>
           <Image
-            src={img10}
+            src="/img10.jpg"
             alt="Cosplay Principal"
             className={styles.imagemCosplay}
+            width={300}
+            height={500}
           />
         </div>
 
         <div className={styles.Containerimagem}>
           <Image
-            src={img15}
+            src="/cosplayrs.jpg"
             alt="Cosplay Principal"
             className={styles.imagemCosplay}
+            width={300}
+            height={500}
           />
         </div>
       </section>

@@ -2,7 +2,6 @@
 
 import styles from './page.module.css';
 import Image from 'next/image';
-import BG1 from "/public/BG2.jpeg";
 import { Calendar, MapPin, X } from 'lucide-react';
 import { useState } from 'react';
 
@@ -40,11 +39,10 @@ export default function PageEventosFuturos() {
           
           {/* A IMAGEM DE FUNDO (Cobre apenas esta área) */}
           <Image
-            src={BG1}
+            src="/BG2.jpeg"
             alt="Fundo do corpo do card"
             fill // Preenche o elemento pai (.bodyEventoCard)
             priority
-            placeholder="blur" // Efeito blur ao carregar
             className={styles.bgImageBody}
           />
 

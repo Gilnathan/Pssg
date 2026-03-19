@@ -3,12 +3,19 @@
 import { useState, useEffect } from 'react';
 import styles from './loadingScrean.module.css';
 import Lottie from "lottie-react";
-import loadingScreanAnimation from '../../../public/loadingScrean.json';
 import Image from 'next/image'; 
 
 
 export default function LoadingScrean() {
     const [isVisible, setIsVisible] = useState(true);
+    const [animationData, setAnimationData] = useState(null);
+
+    useEffect(() => {
+        fetch('/loadingScrean.json')
+            .then(res => res.json())
+            .then(data => setAnimationData(data))
+            .catch(err => console.error('Erro ao carregar animação de loading:', err));
+    }, []);
 
     useEffect(() => {
         // Check if the loading screen has been shown in this session
@@ -27,7 +34,7 @@ export default function LoadingScrean() {
         return () => clearTimeout(timer);
     }, []);
 
-    if (!isVisible) {
+    if (!isVisible || !animationData) {
         return null;
     }
 
@@ -37,7 +44,7 @@ export default function LoadingScrean() {
             <div className={styles.lottieIcon}>
                 
                 <Lottie
-                    animationData={loadingScreanAnimation}
+                    animationData={animationData}
                     loop={false}
                     autoplay={true}
                     style={{ width: '100%', height: '100%' }}

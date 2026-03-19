@@ -2,14 +2,21 @@
 'use client';
 
 import Lottie from 'lottie-react';
+import { useState, useEffect } from 'react';
 import styles from './Card_Wpp.module.css';
 import ButtonGlobal from '../ButtonGlobal/ButtonGlobal';
 
-// Se seu componente está em src/components/Card_Discord/Card_Discord.jsx
-// e o JSON está em public/Discord_icon.json
-import Whatsappicon from '../../../public/Whatsapp_icon.json'; 
-
 export default function Card_Wpp() {
+    const [animationData, setAnimationData] = useState(null);
+
+    useEffect(() => {
+        fetch('/Whatsapp_icon.json')
+            .then(res => res.json())
+            .then(data => setAnimationData(data))
+            .catch(err => console.error('Erro ao carregar animação WhatsApp:', err));
+    }, []);
+
+    if (!animationData) return null;
     return(
         <div className={styles.container}>
             
@@ -17,7 +24,7 @@ export default function Card_Wpp() {
                 <div className={styles.containerInfomaçoes}>
                     <div className={styles.lottieIcon}> 
                         <Lottie
-                            animationData={Whatsappicon}
+                            animationData={animationData}
                             loop={true}
                             autoplay={true}
                             style={{ width: '100%', height: '100%' }} 

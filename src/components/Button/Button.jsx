@@ -3,7 +3,6 @@
 import React from 'react'
 import styles from './Button.module.css'
 import Image from 'next/image'
-import Coinvideogame from '/public/Coinvideogame.png';
 
 const Button = () => {
   const handleClick = () => {
@@ -26,7 +25,7 @@ const Button = () => {
           <span className={styles.text}>
             
             <Image
-              src={Coinvideogame}
+              src="/Coinvideogame.png"
               className={styles.Coinvideogame}
               alt="Ícone de moeda de videogame" // Texto alternativo adicionado aqui
               width={50} // Adicione a largura e altura intrínsecas da imagem

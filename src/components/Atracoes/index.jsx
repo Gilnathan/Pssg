@@ -3,11 +3,6 @@
 import styles from "./Atracoes.module.css";
 import Card from "@/components/Card/Card";
 
-import kpop from "/public/kpop.webp";
-import cosplayrs from "/public/cosplayrs1.jpg";
-import areagamer from "/public/areagamer.webp";
-import gincana from "/public/gincana.jpg";
-
 import Countdown from "../Countdown/Countdown";
 
 import { useRef } from "react";
@@ -80,7 +75,7 @@ export default function Atracoes() {
           <Card
             titulo="Campeonato de K-Pop (Dance Cover)"
             descricao="Solte o talento no palco com performances incríveis de K-Pop! Participe sozinho ou com seu grupo e concorra a prêmios mostrando sua paixão pela dança coreana."
-            imagem={kpop}
+            imagem="/kpop.webp"
             linkPage="/Page_K-Pop"
             tituloColor="#00485b"
             descricaoColor="#4A4A4A"
@@ -95,7 +90,7 @@ export default function Atracoes() {
           <Card
             titulo="Concurso Cosplay & Cospobre"
             descricao="Seja com armadura digna de cinema ou papelão e muita criatividade — o importante é se divertir! Mostre sua caracterização, desfile no palco e concorra a prêmios em duas categorias: Cosplay e Cospobre!"
-            imagem={cosplayrs}
+            imagem="/cosplayrs1.jpg"
             linkPage="/Page_cosplay"
             tituloColor="#00485b"
             descricaoColor="#4A4A4A"
@@ -125,7 +120,7 @@ export default function Atracoes() {
           <Card
             titulo="Quiz, Gincanas e Workshops"
             descricao="Você é um otaku raiz? Prove seus conhecimentos em nossos quizzes interativos e encare gincanas cheias de desafios. Diversão garantida para todas as idades!"
-            imagem={gincana}
+            imagem="/gincana.jpg"
             linkPage="/evento-cosplay"
             tituloColor="#00485b"
             descricaoColor="#4A4A4A"

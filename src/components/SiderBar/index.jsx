@@ -7,13 +7,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { Camera } from "lucide-react";
 
-import LogoGif from "/public/Logo_animado.gif";
-import Logo from "/public/logo.png";
-import home from "/public/home.png";
-import datas from "/public/datas.png";
-import evento from "/public/evento.png";
-import contato from "/public/contato.png";
-
 export default function SideBar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -24,24 +17,24 @@ export default function SideBar() {
     <>
       <div className={styles.SideBarContainer}>
         <div className={styles.contentLimitado}>
-          <Image src={Logo} alt="logo" className={styles.logo} />
+          <Image src="/logo.png" alt="logo" className={styles.logo} width={100} height={100} />
 
           <nav className={styles.navContainer}>
             <Link href="/">
               <button className={styles.bntSideBar}>
-                <Image src={home} alt="home" className={styles.icon} />
+                <Image src="/home.png" alt="home" className={styles.icon} width={24} height={24} />
                 Home
               </button>
             </Link>
             <Link href="/Page_EventosFuturos">
               <button className={styles.bntSideBar}>
-                <Image src={datas} alt="datas" className={styles.icon} />
+                <Image src="/datas.png" alt="datas" className={styles.icon} width={24} height={24} />
                 Eventos Futuros
               </button>
             </Link>
             <Link href="/SobreEvento">
               <button className={styles.bntSideBar}>
-                <Image src={evento} alt="evento" className={styles.icon} />
+                <Image src="/evento.png" alt="evento" className={styles.icon} width={24} height={24} />
                 Evento
               </button>
             </Link>
@@ -53,7 +46,7 @@ export default function SideBar() {
             </Link>
             <Link href="/">
               <button className={styles.bntSideBar}>
-                <Image src={contato} alt="contato" className={styles.icon} />
+                <Image src="/contato.png" alt="contato" className={styles.icon} width={24} height={24} />
                 Contato
               </button>
             </Link>
@@ -75,19 +68,19 @@ export default function SideBar() {
             </button>
             <Link href="/">
               <button className={styles.bntSideBarMobile} onClick={closeMenu}>
-                <Image src={home} alt="home" className={styles.icon} />
+                <Image src="/home.png" alt="home" className={styles.icon} width={24} height={24} />
                 Home
               </button>
             </Link>
             <Link href="/EventosFuturos">
               <button className={styles.bntSideBarMobile} onClick={closeMenu}>
-                <Image src={datas} alt="datas" className={styles.icon} />
+                <Image src="/datas.png" alt="datas" className={styles.icon} width={24} height={24} />
                 Eventos Futuros
               </button>
             </Link>
             <Link href="/SobreEvento">
               <button className={styles.bntSideBarMobile} onClick={closeMenu}>
-                <Image src={evento} alt="evento" className={styles.icon} />
+                <Image src="/evento.png" alt="evento" className={styles.icon} width={24} height={24} />
                 Evento
               </button>
             </Link>
@@ -99,7 +92,7 @@ export default function SideBar() {
             </Link>
             <Link href="/">
               <button className={styles.bntSideBarMobile} onClick={closeMenu}>
-                <Image src={contato} alt="contato" className={styles.icon} />
+                <Image src="/contato.png" alt="contato" className={styles.icon} width={24} height={24} />
                 Contato
               </button>
             </Link>

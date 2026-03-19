@@ -1,24 +1,33 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Lottie from "lottie-react";
 import ButtonGlobal from "../ButtonGlobal/ButtonGlobal";
 import styles from "./SessaoGamer.module.css";
 
-import AnimationGamer from "../../../public/AnimationGamer.json";
-
 import CardGames from "../CardGames/CardGames";
 
 export default function SessaoGamer() {
+  const [animationData, setAnimationData] = useState(null);
+
+  useEffect(() => {
+    fetch('/AnimationGamer.json')
+      .then(res => res.json())
+      .then(data => setAnimationData(data))
+      .catch(err => console.error('Erro ao carregar animação Gamer:', err));
+  }, []);
   return (
     <section className={styles.sessaoGamer}>
       <div className={styles.container}>
         <div className={styles.lottieIcon}>
-          <Lottie
-            animationData={AnimationGamer}
-            loop={true}
-            autoplay={true}
-            style={{ width: "100%", height: "100%" }}
-          />
+          {animationData && (
+            <Lottie
+              animationData={animationData}
+              loop={true}
+              autoplay={true}
+              style={{ width: "100%", height: "100%" }}
+            />
+          )}
         </div>
         <div className={styles.containerInformacoes}>
           <h2 className={styles.tituloEvento}>

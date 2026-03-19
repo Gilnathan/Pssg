@@ -5,9 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import Lottie from "lottie-react";
-import AnimationGamer from "../../../public/AnimationGamer2.json";
-
-import { useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 
@@ -15,6 +13,14 @@ import VideoNaMoldura from '@/components/VideoNaMoldura/VideoNaMoldura';
 import { Car } from 'lucide-react';
 
 export default function SobreEvento() {
+    const [animationData, setAnimationData] = useState(null);
+
+    useEffect(() => {
+        fetch('/AnimationGamer2.json')
+            .then(res => res.json())
+            .then(data => setAnimationData(data))
+            .catch(err => console.error('Erro ao carregar animação SobreEvento:', err));
+    }, []);
 
     const videoURL1 = 'PSSG.mp4'; // Já é o caminho correto para public
     const videoURL2 = 'Video-K-pop.mp4'; // Usei o mesmo para exemplo
@@ -53,12 +59,14 @@ export default function SobreEvento() {
         // 3. Associe as referências aos seus elementos JSX
         <div ref={containerRef} className={styles.container}>
             <div className={styles.lottieIcon}>
-                <Lottie
-                animationData={AnimationGamer}
-                loop={true}
-                autoplay={true}
-                style={{ width: "100%", height: "100%" }}
-                />
+                {animationData && (
+                    <Lottie
+                    animationData={animationData}
+                    loop={true}
+                    autoplay={true}
+                    style={{ width: "100%", height: "100%" }}
+                    />
+                )}
             </div>
             <div className={styles.containerLimitado}>
                 
