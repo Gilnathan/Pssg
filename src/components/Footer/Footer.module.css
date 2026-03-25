@@ -1,0 +1,380 @@
+/* ============================================
+   FOOTER - IDENTIDADE VISUAL PSSG
+   ============================================ */
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(135deg, #002366 0%, #003d7a 50%, #00485b 100%);
+  border-top: 2px solid rgba(255, 208, 128, 0.4);
+  box-shadow: 0 -10px 40px rgba(0, 35, 102, 0.3);
+  
+  overflow: hidden;
+}
+
+/* ============================================
+   CONTAINER & LAYOUT
+   ============================================ */
+
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .container {
+    padding: 40px 20px;
+  }
+}
+
+/* ============================================
+   COLUNA E TÍTULOS
+   ============================================ */
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.columnTitle {
+  font-family: 'Russo One', Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #ffd080 0%, #ff7a00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  margin: 0;
+  animation: titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 208, 128, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 208, 128, 0.4);
+  }
+}
+
+.description {
+  color: #d0d0d0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============================================
+   CNPJ
+   ============================================ */
+
+.cnpjContainer {
+  padding-top: 16px;
+  border-top: 1px solid rgba(0, 255, 0, 0.2);
+  margin-top: 16px;
+}
+
+.cnpjLabel {
+  font-size: 0.7rem;
+  color: #a0a0a0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 6px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.cnpjValue {
+  font-size: 1.05rem;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+/* ============================================
+   CONTACT LINKS
+   ============================================ */
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  position: relative;
+}
+
+.contactLink:hover {
+  transform: translateX(6px);
+}
+
+.iconWrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.whatsappIcon {
+  color: #00ff00;
+}
+
+.contactLink:hover .whatsappIcon {
+  color: #7fff00;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 0, 0.6));
+}
+
+.emailIcon {
+  color: #ffd080;
+}
+
+.contactLink:hover .emailIcon {
+  color: #ffed4e;
+  filter: drop-shadow(0 0 8px rgba(255, 208, 128, 0.6));
+}
+
+.instagramIcon {
+  color: #ff7a00;
+}
+
+.contactLink:hover .instagramIcon {
+  color: #ffa500;
+  filter: drop-shadow(0 0 8px rgba(255, 122, 0, 0.6));
+}
+
+.linkText {
+  color: #d0d0d0;
+  font-size: 0.95rem;
+  transition: color 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  word-break: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactLink:hover .linkText {
+  color: #ffffff;
+}
+
+.socialInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialNote {
+  padding-top: 8px;
+  font-size: 0.8rem;
+  color: #808080;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============================================
+   DIVISOR DECORATIVO
+   ============================================ */
+
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 208, 128, 0.3) 20%,
+    rgba(0, 255, 0, 0.2) 50%,
+    rgba(255, 208, 128, 0.3) 80%,
+    transparent
+  );
+  margin: 40px 0;
+  box-shadow: 0 0 15px rgba(255, 208, 128, 0.1);
+}
+
+/* ============================================
+   BOTTOM FOOTER
+   ============================================ */
+
+.bottomFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 640px) {
+  .bottomFooter {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #a0a0a0;
+  font-size: 0.85rem;
+  transition: color 0.5s ease;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.copyright:hover {
+  color: #d0d0d0;
+}
+
+.copyrightIcon {
+  width: 16px;
+  height: 16px;
+  color: #00ff00;
+  flex-shrink: 0;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .badges {
+    justify-content: flex-end;
+  }
+}
+
+.poweredByText {
+  font-size: 0.8rem;
+  color: #808080;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.techBadges {
+  display: flex;
+  gap: 8px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 208, 128, 0.5);
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffd080;
+  background: rgba(255, 208, 128, 0.05);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  font-family: 'Russo One', Arial, sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.badge:hover {
+  background: rgba(255, 208, 128, 0.15);
+  border-color: rgba(255, 208, 128, 0.8);
+  box-shadow: 0 0 12px rgba(255, 208, 128, 0.3);
+}
+
+/* ============================================
+   EFEITOS DECORATIVOS
+   ============================================ */
+
+.glowEffect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 255, 0, 0.2) 50%,
+    transparent
+  );
+  filter: blur(1px);
+  pointer-events: none;
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+
+.footer a:focus-visible {
+  outline: 2px solid #ffd080;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* ============================================
+   RESPONSIVE - MOBILE ADJUSTMENTS
+   ============================================ */
+
+@media (max-width: 480px) {
+  .columnTitle {
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .cnpjValue {
+    font-size: 0.95rem;
+  }
+
+  .linkText {
+    font-size: 0.9rem;
+  }
+
+  .copyright {
+    font-size: 0.8rem;
+  }
+
+  .divider {
+    margin: 30px 0;
+  }
+}

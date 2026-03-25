@@ -1,0 +1,96 @@
+.ContainerMain{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(to bottom, #1A4B56, #3B97B1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 1300px;
+    min-height: 180px;
+    background-color: #b3b0b0;
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.16);
+    position: relative;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-image: url('/BG.png');
+}
+
+.textTop{
+  font-family: "Russo One", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.textBottom{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0;
+    max-width: 400px;
+}
+
+.logoWrapper img {    
+    width: auto;
+    height: 100%;
+    display: flex;
+    
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    text-align: center;
+    width: 100%;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.uploadBtn {
+    border: 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #0288d1, #00acc1);
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(2, 136, 209, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+    letter-spacing: 0.4px;
+}
+
+.uploadBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(2, 136, 209, 0.45);
+    filter: brightness(1.05);
+}
+
+.uploadBtn:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 14px rgba(2, 136, 209, 0.35);
+}
+
+.uploadBtn:focus-visible {
+    outline: 3px solid rgba(3, 120, 166, 0.45);
+    outline-offset: 3px;
+}

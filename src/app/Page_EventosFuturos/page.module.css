@@ -41,6 +41,10 @@
   overflow: hidden;
 }
 
+.containerText{
+  gap: 12px;
+}
+
 .topEventoCard::before {
   content: '';
   position: absolute;
