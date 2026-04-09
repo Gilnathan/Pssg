@@ -39,7 +39,7 @@ export default function PageEventosFuturos() {
           
           {/* A IMAGEM DE FUNDO (Cobre apenas esta área) */}
           <Image
-            src="/BG2.jpeg"
+            src="/BG3.jpeg"
             alt="Fundo do corpo do card"
             fill // Preenche o elemento pai (.bodyEventoCard)
             priority

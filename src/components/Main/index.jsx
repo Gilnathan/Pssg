@@ -41,8 +41,8 @@ export default function Main() {
       >
         <motion.div className={styles.containerInf} variants={itemVariants}>
           <motion.h1 variants={itemVariants}>
-            <span className={styles.titleOrange}>Porto Seguro</span> <br />
-            <span className={styles.titleWhite}>Summer Geek</span>
+            <span className={styles.titleOrange}>PSSG DEMO</span> <br />
+            <span className={styles.titleWhite}>SESC GEEK</span>
           </motion.h1>
 
           <motion.p className={styles.subtitle} variants={itemVariants}>
@@ -52,7 +52,7 @@ export default function Main() {
           <motion.div className={styles.infoContainer} variants={itemVariants}>
             <div className={styles.eventInfo}>
               <span className={styles.label}>Data do Evento</span>
-              <strong>12/10/2025</strong>
+              <strong>25/40/2026</strong>
             </div>
 
             <div className={styles.eventInfo}>

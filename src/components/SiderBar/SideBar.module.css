@@ -2,7 +2,6 @@
     width: 100vw;
     height: 80px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: white;
@@ -16,6 +15,7 @@
     z-index: 100;
     padding: 0 20px;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto para melhorar a legibilidade */
+    backdrop-filter: blur(10px);
   }
   
   .contentLimitado {
@@ -29,7 +29,7 @@
   }
   
   .logo {
-    height: 40px;
+    height: 30px;
     width: auto;
     
   }

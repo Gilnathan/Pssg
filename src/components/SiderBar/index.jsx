@@ -72,7 +72,7 @@ export default function SideBar() {
                 Home
               </button>
             </Link>
-            <Link href="/EventosFuturos">
+            <Link href="/Page_EventosFuturos">
               <button className={styles.bntSideBarMobile} onClick={closeMenu}>
                 <Image src="/datas.png" alt="datas" className={styles.icon} width={24} height={24} />
                 Eventos Futuros

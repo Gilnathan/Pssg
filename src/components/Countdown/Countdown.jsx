@@ -5,7 +5,7 @@ import styles from "./Countdown.module.css"
 
 export default function Countdown() {
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2025-10-12T00:00:00")
+    const targetDate = new Date("2026-04-25T14:00:00")
     const now = new Date()
     const difference = targetDate - now
 

@@ -94,3 +94,62 @@
     outline: 3px solid rgba(3, 120, 166, 0.45);
     outline-offset: 3px;
 }
+
+@media (max-width: 900px) {
+    .ContainerMain {
+        padding: 24px 18px;
+    }
+
+    .card {
+        width: 100%;
+        min-height: auto;
+        padding: 28px;
+    }
+
+    .cardContent {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .textTop {
+        font-size: 2.4rem;
+        letter-spacing: 1.5px;
+    }
+
+    .textBottom {
+        max-width: 100%;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .logoWrapper img {
+        width: 80px;
+        height: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .ContainerMain {
+        padding: 18px 14px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .textTop {
+        font-size: 1.9rem;
+        letter-spacing: 1px;
+    }
+
+    .textBottom {
+        font-size: 0.95rem;
+        max-width: 100%;
+    }
+
+    .logoWrapper img {
+        width: 68px;
+    }
+}
