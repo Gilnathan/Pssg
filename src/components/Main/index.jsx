@@ -52,7 +52,7 @@ export default function Main() {
           <motion.div className={styles.infoContainer} variants={itemVariants}>
             <div className={styles.eventInfo}>
               <span className={styles.label}>Data do Evento</span>
-              <strong>25/40/2026</strong>
+              <strong>25/04/2026</strong>
             </div>
 
             <div className={styles.eventInfo}>

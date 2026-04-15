@@ -9,6 +9,7 @@ import SessaoGamer from "@/components/SessaoGamer/SessaoGamer";
 import SessaoGrupos from "@/components/SessaoGrupos/SessaoGrupos";
 import SobreEvento from "@/components/SobreEvento";
 import LoadingScrean from "@/components/LoadingScrean/loadingScrean";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -20,11 +21,7 @@ export default function Home() {
       <Carrocel />
       <SessaoGamer />
       <SessaoGrupos />
-      
-    
-      <footer className={styles.footer}>
-        
-      </footer>
+      <Footer />
     </div>
   );
 }

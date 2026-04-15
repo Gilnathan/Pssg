@@ -44,12 +44,12 @@ export default function SideBar() {
                 Fotos
               </button>
             </Link>
-            <Link href="/">
+           {/* <Link href="/">
               <button className={styles.bntSideBar}>
                 <Image src="/contato.png" alt="contato" className={styles.icon} width={24} height={24} />
                 Contato
               </button>
-            </Link>
+            </Link> */}
           </nav>
 
           <div className={styles.menuIcon} onClick={toggleMenu}>
@@ -90,12 +90,12 @@ export default function SideBar() {
                 Fotos
               </button>
             </Link>
-            <Link href="/">
+            {/* <Link href="/">
               <button className={styles.bntSideBarMobile} onClick={closeMenu}>
                 <Image src="/contato.png" alt="contato" className={styles.icon} width={24} height={24} />
                 Contato
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}

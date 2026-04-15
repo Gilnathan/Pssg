@@ -17,7 +17,7 @@ export default function Footer() {
           <div className={styles.column}>
             <h3 className={styles.columnTitle}>PSSG</h3>
             <p className={styles.description}>
-              Porto Seguro Super Geek - Celebrando a cultura geek e gamer com estilo e diversão.
+              Porto Seguro Summer Geek - Celebrando a cultura geek e gamer com estilo e diversão.
             </p>
             {/* CNPJ */}
             <div className={styles.cnpjContainer}>

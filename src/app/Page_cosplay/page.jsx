@@ -79,7 +79,7 @@ export default function Evento() {
           </p>
           <ButtonGlobal
             buttonText="Cadastro para concurso"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdErmqihJNqHe_lB34chYdqwFYVrVZLzZCh1Su5qHg5ToNxaw/viewform?usp=send_form"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdErmqihJNqHe_lB34chYdqwFYVrVZLzZCh1Su5qHg5ToNxaw/viewform"
           />
         </div>
       </div>

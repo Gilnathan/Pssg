@@ -73,7 +73,7 @@ export default function Atracoes() {
           style={{ width: "100%", maxWidth: "350px" }}
         >
           <Card
-            titulo="Campeonato de K-Pop (Dance Cover)"
+            titulo="Kpop dance cover  (apresentação e concurso)"
             descricao="Solte o talento no palco com performances incríveis de K-Pop! Participe sozinho ou com seu grupo e concorra a prêmios mostrando sua paixão pela dança coreana."
             imagem="/kpop.webp"
             linkPage="/Page_K-Pop"
@@ -88,7 +88,7 @@ export default function Atracoes() {
           style={{ width: "100%", maxWidth: "350px" }}
         >
           <Card
-            titulo="Concurso Cosplay & Cospobre"
+            titulo="cosplay  (desfile e concurso)"
             descricao="Seja com armadura digna de cinema ou papelão e muita criatividade — o importante é se divertir! Mostre sua caracterização, desfile no palco e concorra a prêmios em duas categorias: Cosplay e Cospobre!"
             imagem="/cosplayrs1.jpg"
             linkPage="/Page_cosplay"

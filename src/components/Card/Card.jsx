@@ -18,6 +18,19 @@ export default function Card({
   buttonLabel,
   icon: Icon,
 }) {
+  const renderTitulo = () => {
+    if (!titulo) return titulo;
+    const match = titulo.match(/^(.+?)\s*\((.+)\)$/);
+    if (!match) return titulo;
+    return (
+      <>
+        {match[1]}
+        <br />
+        <span className={styles.headerTitleSub}>({match[2]})</span>
+      </>
+    );
+  };
+
   return (
     <div className={styles.card}>
       {/* Header with badge and icon */}
@@ -28,7 +41,16 @@ export default function Card({
         >
           <div className={styles.headerContent}>
             {Icon && <Icon className={styles.headerIcon} size={24} />}
-            <h3 className={styles.headerTitle}>{titulo}</h3>
+            <h3
+              className={styles.headerTitle}
+              style={
+                tituloColor
+                  ? {paddingLeft: "0.85rem" }
+                  : {}
+              }
+            >
+              {titulo}
+            </h3>
           </div>
           {badge && (
             <div
