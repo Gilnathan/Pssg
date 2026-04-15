@@ -21,7 +21,6 @@ export default function Home() {
       <Carrocel />
       <SessaoGamer />
       <SessaoGrupos />
-      <Footer />
     </div>
   );
 }

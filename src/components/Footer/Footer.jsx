@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className={styles.footer}>
+    <footer id="footer" className={styles.footer}>
       {/* Container Principal */}
       <div className={styles.container}>
         {/* Grid Responsivo */}

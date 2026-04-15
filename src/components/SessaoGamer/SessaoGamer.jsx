@@ -45,25 +45,41 @@ export default function SessaoGamer() {
       <div className={styles.containerJogos}>
 
         <CardGames
-          title="Just Dance"
+          title="Just dance 2025"
           description="casual"
-          imageUrl="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70070000017893/2e1cdcae1a7662012ff11f46b068a795c239d178cf414af2b963fca03d8ce420"
+          imageUrl="https://static.wikia.nocookie.net/justdance/images/7/7a/Boxart_redoo_instapost.png/revision/latest?cb=20240618165333"
           linkPage="/play/competitive"
           competitive="casual"
         />
 
         <CardGames
-          title="Five Nights at Freddy’s VR"
+          title="Vr fnaf help wanted"
           description="casual"
-          imageUrl="https://imgproxy.eneba.games/ikR5-aGMwunpsD74oRdzceQM7FkYCjIiCIeieTbW8fs/rs:fit:300/ar:1/czM6Ly9wcm9kdWN0/cy5lbmViYS5nYW1l/cy9wcm9kdWN0cy93/dUVYWEQ2THNjUEQ1/M04wZGliQVM2Mzdp/aW1mUWlqb3RScG9j/aVFhNk5RLmpwZw"
+          imageUrl="https://static.wikia.nocookie.net/freddy-fazbears-pizza/images/f/fa/FNaFHW-SteamCoverArt.jpg/revision/latest?cb=20240819160806"
           linkPage="/play/competitive"
           competitive="casual"
         />
 
         <CardGames
-          title=""
-          description="EM BREVE"
-          imageUrl="https://i.pinimg.com/736x/10/b6/77/10b677f80fdbdde4df60f9d74832cf7d.jpg"
+          title="Mário kart 8"
+          description="casual"
+          imageUrl="https://upload.wikimedia.org/wikipedia/pt/0/0d/MarioKart8.jpg"
+          linkPage="/play/competitive"
+          competitive="casual"
+        />
+
+         <CardGames
+          title="Mortal kombat 11"
+          description="casual"
+          imageUrl="https://files.meiobit.com/wp-content/uploads/2019/04/20190426mortal-kombat-001.jpg"
+          linkPage="/play/competitive"
+          competitive="casual"
+        />
+
+        <CardGames
+          title="Beat Saber"
+          description="casual"
+          imageUrl="https://www.tuni.fi/oasis/wordpress/wp-content/uploads/2024/11/bsaber.jpg"
           linkPage="/play/competitive"
           competitive="casual"
         />
