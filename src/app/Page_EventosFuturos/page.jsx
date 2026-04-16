@@ -19,7 +19,7 @@ export default function PageEventosFuturos() {
           <div className={styles.infoContainer}>
             <div className={styles.dateSection}>
               <Calendar size={24} className={styles.calendarIcon} />
-              <h2>Sábado, 25 abril às 14:00</h2>
+              <h2>Sábado, 25 abril às 12:00</h2>
             </div>
             <div className={styles.locationSection}>
               <MapPin size={24} className={styles.mapIconTop} />
